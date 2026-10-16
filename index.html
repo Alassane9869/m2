@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMV - SARL | Métallerie &amp; Vitrages sur Mesure à Bamako, Mali</title>
-  <meta name="description" content="Tafoutien Métallique et Vitrages (TMV-SARL) à Kalaban Koro, Bamako. Conception et installation de portails, portes métalliques, garde-corps, escaliers, baies vitrées et vitrines." />
-  <meta name="keywords" content="métallerie Bamako, vitrage Mali, menuiserie métallique Kalaban Koro, portes métalliques, garde-corps, baies vitrées, TMV SARL" />
+  <title>TMV - SARL | Métallerie &amp; Vitrages d'Art à Bamako, Mali</title>
+  <meta name="description" content="Tafoutien Métallique et Vitrages (TMV-SARL) à Kalaban Koro, Bamako. Fabrication sur-mesure de portails, portes blindées, garde-corps inox, escaliers, baies vitrées et vitrines au Mali." />
+  <meta name="keywords" content="métallerie Bamako, vitrage Mali, menuiserie métallique Kalaban Koro, portail découpe laser, garde-corps inox, baies vitrées Bamako, TMV SARL" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
+  <!-- ============ TOP BAR CORPORATE ============ -->
+  <aside class="top-bar">
+    <div class="container top-bar-wrap">
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+        <span class="top-bar-item"><i class="bi bi-geo-alt-fill"></i> Kalaban Koro, Bamako, Mali</span>
+        <span class="top-bar-item"><i class="bi bi-clock-fill"></i> Lun - Sam : 08h00 - 18h30</span>
+      </div>
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+        <span class="top-bar-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></span>
+        <span class="top-bar-item"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : +223 99 96 72 63</a></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ HEADER PRINCIPAL ============ -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand">
@@ -26,19 +41,37 @@
       </a>
 
       <div class="nav-primary">
-        <nav class="nav-links" aria-label="Navigation principale">
-          <a href="index.html" aria-current="page">Accueil</a>
+        <nav class="nav-links" id="mainNav" aria-label="Navigation principale">
+          <a href="index.html" aria-current="page"><i class="bi bi-house-door" style="display:none;margin-right:6px;"></i>Accueil</a>
           <a href="a-propos.html">À propos</a>
           <a href="services.html">Services</a>
           <a href="realisations.html">Réalisations</a>
           <a href="equipe.html">Équipe</a>
           <a href="contact.html">Contact</a>
+
+          <!-- Actions dédiées pour le tiroir mobile -->
+          <div class="nav-drawer-cta" style="display:none;">
+            <a href="#devis" class="btn btn-primary btn-block">
+              <i class="bi bi-file-earmark-text"></i> Demander un devis gratuit
+            </a>
+            <a href="tel:+22399967263" class="btn btn-outline-dark btn-block">
+              <i class="bi bi-telephone-fill"></i> Appeler : +223 99 96 72 63
+            </a>
+            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+              <i class="bi bi-whatsapp"></i> Échanger sur WhatsApp
+            </a>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:6px;">
+              <i class="bi bi-geo-alt-fill" style="color:var(--tmv-primary);"></i> Kalaban Koro, Bamako • Ouvert Lun-Sam
+            </div>
+          </div>
         </nav>
         <div class="nav-cta">
-          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV">
-            <i class="bi bi-telephone"></i> +223 99 96 72 63
+          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV au +223 99 96 72 63">
+            <i class="bi bi-telephone-fill"></i> +223 99 96 72 63
           </a>
-          <a href="#devis" class="btn btn-primary">Demander un devis</a>
+          <a href="#devis" class="btn btn-primary">
+            Demander un devis <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
         <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -48,187 +81,264 @@
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
+    <!-- ============ HERO ARCHITECTURAL ============ -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-inner">
-          <div class="hero-tag">
-            <i class="bi bi-geo-alt-fill"></i> Atelier à Kalaban Koro, Bamako
+          <div class="hero-pill">
+            <i class="bi bi-shield-check"></i> Atelier à Kalaban Koro, Bamako • Depuis 2014
           </div>
-          <span class="eyebrow">Métallerie &amp; Vitrages</span>
-          <h1>Tafoutien Métallique et Vitrages</h1>
-          <p class="hero-tagline">Conception sur-mesure &amp; installation soignée au Mali</p>
-          <p class="lede">Depuis 2014, TMV-SARL accompagne les particuliers et professionnels dans la fabrication et la pose de portes métalliques, portails, garde-corps, escaliers design, vitrages et baies vitrées de qualité supérieure.</p>
-          
+          <span class="eyebrow">Artisanat d'Excellence au Mali</span>
+          <h1>
+            Tafoutien Métallique &amp; Vitrages
+            <span class="highlight">L'Art du Métal &amp; du Verre Façonné sur Mesure</span>
+          </h1>
+          <p class="lede">
+            TMV-SARL conçoit, fabrique et installe vos portails monumentaux découpés au laser, portes blindées de haute sécurité, garde-corps design inox &amp; verre, escaliers contemporains et baies vitrées lumineuses pour villas, résidences et chantiers de prestige à Bamako.
+          </p>
+
+          <div class="hero-checklist">
+            <div class="hero-checklist-item">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Étude technique 3D &amp; relevé de cotes gratuit sur votre chantier</span>
+            </div>
+            <div class="hero-checklist-item">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Aciers épais, inox 316 marin et thermo-laquage anticorrosion haute durabilité</span>
+            </div>
+            <div class="hero-checklist-item">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Pose soignée et réglages assurés par nos propres artisans métalliers</span>
+            </div>
+          </div>
+
           <div class="hero-cta">
             <a href="#devis" class="btn btn-primary">
-              Demander un devis
+              <i class="bi bi-file-earmark-text"></i> Demander un devis gratuit
             </a>
-            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20renseignement%20pour%20mon%20projet." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis%20ou%20des%20conseils%20pour%20mon%20projet." target="_blank" rel="noopener" class="btn btn-whatsapp">
               <i class="bi bi-whatsapp"></i> Échanger sur WhatsApp
-            </a>
-            <a href="#services" class="btn btn-outline">
-              Découvrir nos services
             </a>
           </div>
 
           <div class="hero-stats">
-            <div>
+            <div class="hero-stat-card">
               <strong data-counter="2014">2014</strong>
-              <span>Année de création</span>
+              <span>Année d'expertise</span>
             </div>
-            <div>
-              <strong data-counter="250" data-suffix="+">250+</strong>
-              <span>Chantiers réalisés</span>
+            <div class="hero-stat-card">
+              <strong data-counter="350" data-suffix="+">350+</strong>
+              <span>Chantiers livrés</span>
             </div>
-            <div>
+            <div class="hero-stat-card">
               <strong data-counter="100" data-suffix="%">100%</strong>
-              <span>Fabrication sur-mesure</span>
+              <span>Sur-mesure garanti</span>
             </div>
           </div>
         </div>
 
         <div class="hero-media">
-          <div class="hero-card-img">
-            <img src="images/accueil/hero.jpg" alt="Réalisation TMV - Métallerie et vitrages à Bamako" />
+          <div class="hero-showcase">
+            <img src="images/services/portail-moderne-villa.jpg" alt="Portail coulissant moderne découpe laser réalisé par TMV pour une villa à Bamako" />
+            <div class="hero-showcase-badge">
+              <div>
+                <strong>Portail découpe laser &amp; clôture contemporaine</strong>
+                <span>Réalisation d'exception TMV-SARL • Villa de Standing</span>
+              </div>
+              <span style="font-size:0.75rem;color:var(--tmv-sky);"><i class="bi bi-geo-alt"></i> Bamako</span>
+            </div>
+          </div>
+
+          <!-- Deux vignettes d'illustration des autres métiers -->
+          <div class="hero-mini-grid">
+            <div class="hero-mini-card">
+              <img src="images/services/garde-corps-terrasse.jpg" alt="Garde-corps Inox 316 et verre trempé pour balcon" />
+              <div>
+                <strong>Garde-corps Inox &amp; Verre</strong>
+                <span>Inox 316 marin &amp; Verre Sécurit</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="images/accueil/hero.jpg" alt="Portail d'atelier Kalaban Koro" />
+              <div>
+                <strong>Ferronnerie Lourde</strong>
+                <span>Tôle ajourée &amp; Sécurité</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ PRÉSENTATION ============ -->
+    <!-- ============ BANDEAU DE RÉASSURANCE PRO ============ -->
+    <section class="trust-strip">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <strong>Aciers &amp; Verres Certifiés</strong>
+              <span>Matériaux neufs de forte épaisseur</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="bi bi-rulers"></i></div>
+            <div>
+              <strong>Prise de Cotes Gratuite</strong>
+              <span>Déplacement direct sur votre chantier</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <strong>Délais Respectés</strong>
+              <span>Planning ferme convenu au départ</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="bi bi-tools"></i></div>
+            <div>
+              <strong>Pose &amp; Suivi Intégrés</strong>
+              <span>Artisans qualifiés de l'atelier Kalaban Koro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRÉSENTATION RAPIDE ============ -->
     <section id="apropos">
       <div class="container split reveal">
         <div class="split-media">
-          <div class="hero-card-img">
+          <div class="hero-showcase" style="border:none;box-shadow:var(--shadow-md);">
             <img src="images/equipe/equipe.jpg" alt="L'atelier TMV à Kalaban Koro" style="height:360px;" />
           </div>
         </div>
         <div>
-          <span class="eyebrow">Qui sommes-nous ?</span>
-          <h2>Un savoir-faire artisanal ancré à Bamako</h2>
-          <p class="lede">Implantée à Kalaban Koro, <strong>TMV-SARL</strong> est une entreprise malienne spécialisée dans la métallerie et le vitrage architectural.</p>
-          <p class="lede" style="margin-top:var(--space-3);">Sous la conduite d'<strong>Abdramane Dembélé</strong>, nos équipes conçoivent des ouvrages alliant solidité mécanique, résistance face aux intempéries et élégance esthétique pour chaque projet résidentiel ou professionnel.</p>
+          <span class="eyebrow">Notre Savoir-Faire</span>
+          <h2>Une exigence technique au service de votre habitat</h2>
+          <p class="lede">Implantée à Kalaban Koro, <strong>TMV-SARL</strong> est une entreprise malienne spécialisée dans la ferronnerie d'art, la métallerie industrielle et la vitrerie architecturale.</p>
+          <p class="lede" style="margin-top:var(--space-3);">Sous la conduite d'<strong>Abdramane Dembélé</strong>, nos artisans conçoivent des ouvrages qui combinent haute sécurité, résistance face au climat sahélien et esthétisme contemporain pour particuliers et professionnels.</p>
           
           <div style="display:flex;gap:var(--space-3);margin-top:var(--space-4);flex-wrap:wrap;">
             <a href="a-propos.html" class="btn btn-outline-dark">Découvrir notre histoire</a>
-            <a href="realisations.html" class="btn btn-outline">Voir nos réalisations</a>
+            <a href="realisations.html" class="btn btn-outline">Explorer nos réalisations</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
+    <!-- ============ SERVICES & PRESTATIONS ============ -->
     <section id="services" class="bg-soft">
       <div class="container">
         <div class="section-head center reveal">
-          <span class="eyebrow">Nos Métiers</span>
+          <span class="eyebrow">Nos Corps de Métier</span>
           <h2>Des solutions complètes en métallerie et vitrage</h2>
-          <p class="lede" style="margin-inline:auto;">De l'étude de votre plan jusqu'à la pose sur votre chantier à Bamako.</p>
+          <p class="lede" style="margin-inline:auto;">De l'étude de votre plan à l'assemblage en atelier et à la pose sur votre chantier à Bamako.</p>
         </div>
 
         <div class="grid grid-4 reveal">
-          <!-- 1. Métallerie -->
+          <!-- 1. Portes & Portails Laser -->
           <div class="card service-card">
             <div class="service-thumb">
-              <img src="images/realisations/images_6.png" alt="Métallerie et charpentes métalliques" />
-              <span class="service-badge">Sur mesure</span>
+              <img src="images/services/portail-moderne-villa.jpg" alt="Portails coulissants et battants découpe laser à Bamako" />
+              <span class="service-badge">Découpe Laser</span>
             </div>
             <div class="card-body">
-              <h3>Métallerie &amp; Structures</h3>
-              <p>Conception et fabrication d'ossatures, charpentes, pergolas et ouvrages métalliques robustes.</p>
-              <a href="services.html#metallerie" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- 2. Portes métalliques -->
-          <div class="card service-card">
-            <div class="service-thumb">
-              <img src="images/realisations/images_1.png" alt="Portes et portails métalliques" />
-              <span class="service-badge">Sécurité</span>
-            </div>
-            <div class="card-body">
-              <h3>Portes &amp; Portails</h3>
-              <p>Portails coulissants ou battants, portes blindées de sécurité et portes techniques adaptées.</p>
+              <h3>Portes &amp; Portails Laser</h3>
+              <p>Portails coulissants motorisables, battants ajourés et clôtures contemporaines en tôle épaisse traitée anticorrosion.</p>
               <a href="services.html#portes" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <!-- 3. Garde-corps -->
+          <!-- 2. Garde-corps Inox & Verre -->
           <div class="card service-card">
             <div class="service-thumb">
-              <img src="images/realisations/images_5.png" alt="Garde-corps et rampes" />
-              <span class="service-badge">Inox &amp; Acier</span>
+              <img src="images/services/garde-corps-terrasse.jpg" alt="Garde-corps inox 316 et verre de balcon villa" />
+              <span class="service-badge">Inox 316 &amp; Verre</span>
             </div>
             <div class="card-body">
-              <h3>Garde-corps &amp; Rampes</h3>
-              <p>Fabrication de garde-corps et rampes d'escalier en acier ou inox pour balcons et terrasses.</p>
+              <h3>Garde-corps &amp; Balustrades</h3>
+              <p>Rampes et balustrades de terrasses et balcons en inox marin 316 poli et panneaux de verre trempé Sécurit.</p>
               <a href="services.html#garde-corps" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <!-- 4. Escaliers -->
+          <!-- 3. Baies vitrées coulissantes -->
           <div class="card service-card">
             <div class="service-thumb">
-              <img src="images/realisations/images_3.png" alt="Escaliers métalliques" />
-              <span class="service-badge">Design</span>
-            </div>
-            <div class="card-body">
-              <h3>Escaliers Métalliques</h3>
-              <p>Escaliers droits, hélicoïdaux ou quart tournant, pour intérieurs et extérieurs.</p>
-              <a href="services.html#escaliers" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- 5. Vitrage -->
-          <div class="card service-card">
-            <div class="service-thumb">
-              <img src="images/realisations/realisation1.jpg" alt="Vitrages de sécurité" />
-              <span class="service-badge">Sécurit</span>
-            </div>
-            <div class="card-body">
-              <h3>Vitrage &amp; Miroiterie</h3>
-              <p>Pose de vitrages simples, doubles, trempés ou feuilletés selon vos besoins de protection.</p>
-              <a href="services.html#vitrage" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- 6. Portes et fenêtres vitrées -->
-          <div class="card service-card">
-            <div class="service-thumb">
-              <img src="images/realisations/images_9.jpg" alt="Portes et fenêtres vitrées" />
-              <span class="service-badge">Luminosité</span>
-            </div>
-            <div class="card-body">
-              <h3>Portes &amp; Fenêtres Vitrées</h3>
-              <p>Châssis élégants offrant clarté, isolation et esthétique pour vos pièces de vie.</p>
-              <a href="services.html#fenetres-vitrees" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- 7. Baies vitrées -->
-          <div class="card service-card">
-            <div class="service-thumb">
-              <img src="images/realisations/images_2.png" alt="Baies vitrées coulissantes" />
-              <span class="service-badge">Coulissant</span>
+              <img src="images/realisations/images_2.png" alt="Baies vitrées coulissantes aluminium" />
+              <span class="service-badge">Luminosité Max</span>
             </div>
             <div class="card-body">
               <h3>Baies Vitrées Coulissantes</h3>
-              <p>Systèmes coulissants ou fixes grand format pour ouvrir votre espace sur l'extérieur.</p>
+              <p>Systèmes coulissants grand format en aluminium anodisé ou laqué pour villas, salons et terrasses lumineuses.</p>
               <a href="services.html#baies-vitrees" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <!-- 8. Vitrines & cloisons -->
+          <!-- 4. Escaliers Design -->
           <div class="card service-card">
             <div class="service-thumb">
-              <img src="images/realisations/images_7.png" alt="Vitrines commerciales et cloisons" />
-              <span class="service-badge">Boutiques</span>
+              <img src="images/realisations/images_3.png" alt="Escaliers métalliques contemporains" />
+              <span class="service-badge">Design Métal</span>
             </div>
             <div class="card-body">
-              <h3>Vitrines &amp; Cloisons</h3>
-              <p>Vitrines commerciales et séparations vitrées de bureaux alliant visibilité et sécurité.</p>
+              <h3>Escaliers Métalliques</h3>
+              <p>Escaliers droits, quart-tournants ou hélicoïdaux (colimaçon) avec limon central robuste et marches sur-mesure.</p>
+              <a href="services.html#escaliers" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- 5. Portes d'entrée blindées -->
+          <div class="card service-card">
+            <div class="service-thumb">
+              <img src="images/realisations/images_9.jpg" alt="Porte métallique d'entrée blindée de sécurité" />
+              <span class="service-badge">Haute Sécurité</span>
+            </div>
+            <div class="card-body">
+              <h3>Portes Blindées &amp; Entrées</h3>
+              <p>Portes de villa et de bureaux haute sécurité multipoints, structure acier renforcé et finitions soignées.</p>
+              <a href="services.html#portes" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- 6. Charpentes & Ouvrages Lourds -->
+          <div class="card service-card">
+            <div class="service-thumb">
+              <img src="images/realisations/realisation1.jpg" alt="Charpentes et ossatures métalliques" />
+              <span class="service-badge">Gros Œuvre</span>
+            </div>
+            <div class="card-body">
+              <h3>Charpentes &amp; Auvents</h3>
+              <p>Calcul, débitage et montage d'ossatures métalliques, pergolas abris voitures et hangars industriels.</p>
+              <a href="services.html#metallerie" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- 7. Vitrines commerciales & Cloisons -->
+          <div class="card service-card">
+            <div class="service-thumb">
+              <img src="images/realisations/images_7.png" alt="Vitrines commerciales et cloisons vitrées" />
+              <span class="service-badge">Professionnels</span>
+            </div>
+            <div class="card-body">
+              <h3>Vitrines &amp; Cloisons Vitrées</h3>
+              <p>Devantures de boutiques, cloisons amovibles de bureaux et vitrages anti-effraction pour commerces et banques.</p>
               <a href="services.html#vitrines" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- 8. Vitrage & Miroiterie -->
+          <div class="card service-card">
+            <div class="service-thumb">
+              <img src="images/realisations/images_8.png" alt="Vitrage et miroiterie d'art" />
+              <span class="service-badge">Verre Sécurit</span>
+            </div>
+            <div class="card-body">
+              <h3>Vitrage &amp; Miroiterie</h3>
+              <p>Fourniture et découpe de verres trempés, feuilletés, miroirs biseautés et verrières style atelier d'artiste.</p>
+              <a href="services.html#vitrage" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -239,31 +349,31 @@
     <section>
       <div class="container">
         <div class="section-head center reveal">
-          <span class="eyebrow">Notre Méthode</span>
-          <h2>Comment se déroule votre projet ?</h2>
-          <p class="lede" style="margin-inline:auto;">Une organisation claire pour un résultat conforme à vos attentes.</p>
+          <span class="eyebrow">Méthode de Travail</span>
+          <h2>Comment se déroule votre projet chez TMV ?</h2>
+          <p class="lede" style="margin-inline:auto;">Un processus éprouvé pour garantir le respect de vos cotes, de vos délais et de votre budget.</p>
         </div>
 
         <div class="process-grid reveal">
           <div class="process-step">
             <span class="step-num">01</span>
             <h3>Prise de cotes &amp; Écoute</h3>
-            <p>Relevé précis des dimensions sur votre chantier à Bamako et conseil technique sur les matériaux.</p>
+            <p>Notre technicien se déplace sur votre chantier à Bamako pour relever les dimensions exactes et vous conseiller techniquement.</p>
           </div>
           <div class="process-step">
             <span class="step-num">02</span>
-            <h3>Devis clair &amp; Détaillé</h3>
-            <p>Proposition personnalisée sans surprise avec indication des délais réels de fabrication.</p>
+            <h3>Devis clair sous 24h/48h</h3>
+            <p>Proposition chiffrée détaillée indiquant les matériaux, les profilés retenus et les délais fermes de fabrication.</p>
           </div>
           <div class="process-step">
             <span class="step-num">03</span>
             <h3>Fabrication en atelier</h3>
-            <p>Découpe, soudure soignée et traitement de surface réalisés dans notre atelier de Kalaban Koro.</p>
+            <p>Découpe de précision, soudure soignée et traitement anticorrosion réalisés dans notre atelier de Kalaban Koro.</p>
           </div>
           <div class="process-step">
             <span class="step-num">04</span>
-            <h3>Livraison &amp; Pose</h3>
-            <p>Installation sécurisée, fixation et réglages précis assurés par nos propres équipes.</p>
+            <h3>Livraison &amp; Pose soignée</h3>
+            <p>Acheminement, ancrage sécurisé, vérification des niveaux et finitions assurés par nos propres équipes.</p>
           </div>
         </div>
       </div>
@@ -273,29 +383,40 @@
     <section id="realisations" class="bg-soft">
       <div class="container">
         <div class="section-head center reveal">
-          <span class="eyebrow">Nos Ouvrages</span>
-          <h2>Aperçu de nos réalisations</h2>
-          <p class="lede" style="margin-inline:auto;">Cliquez sur une photo pour l'afficher en grand écran.</p>
+          <span class="eyebrow">La Preuve par l'Image</span>
+          <h2>Aperçu de nos réalisations récentes</h2>
+          <p class="lede" style="margin-inline:auto;">Cliquez sur un ouvrage pour l'afficher en grand écran ou demander une commande similaire.</p>
         </div>
 
         <div class="gallery-grid reveal">
-          <div class="gallery-item" data-title="Portail métallique résidentiel double vantail" data-category-label="Portes &amp; Portails" data-image="images/realisations/images_1.png">
+          <div class="gallery-item" data-title="Portail coulissant contemporain à découpe laser — Villa de Standing" data-category-label="Portes &amp; Portails" data-image="images/services/portail-moderne-villa.jpg">
             <div class="ph-image">
-              <img src="images/realisations/images_1.png" alt="Portail métallique résidentiel" />
+              <img src="images/services/portail-moderne-villa.jpg" alt="Portail coulissant moderne découpe laser pour villa à Bamako" />
               <div class="gallery-caption">
-                <span>Portes</span>
-                <strong>Portail résidentiel double vantail</strong>
+                <span>Portes &amp; Portails</span>
+                <strong>Portail coulissant découpe laser</strong>
                 <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-title="Baie vitrée coulissante grand format" data-category-label="Vitrages" data-image="images/realisations/images_2.png">
+          <div class="gallery-item" data-title="Garde-corps en Inox 316 marin et verre trempé Sécurit" data-category-label="Garde-corps" data-image="images/services/garde-corps-terrasse.jpg">
             <div class="ph-image">
-              <img src="images/realisations/images_2.png" alt="Baie vitrée coulissante" />
+              <img src="images/services/garde-corps-terrasse.jpg" alt="Garde-corps inox et verre pour terrasse et balcon" />
+              <div class="gallery-caption">
+                <span>Garde-corps</span>
+                <strong>Balustrade Inox 316 &amp; Verre</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Baie vitrée coulissante grand format — Villa contemporaine" data-category-label="Vitrages" data-image="images/realisations/images_2.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_2.png" alt="Baie vitrée coulissante salon" />
               <div class="gallery-caption">
                 <span>Vitrages</span>
-                <strong>Baie vitrée coulissante</strong>
+                <strong>Baie vitrée coulissante grand format</strong>
                 <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
               </div>
             </div>
@@ -303,7 +424,7 @@
 
           <div class="gallery-item" data-title="Escalier métallique intérieur avec limon central" data-category-label="Escaliers" data-image="images/realisations/images_3.png">
             <div class="ph-image">
-              <img src="images/realisations/images_3.png" alt="Escalier intérieur design" />
+              <img src="images/realisations/images_3.png" alt="Escalier intérieur design limon central" />
               <div class="gallery-caption">
                 <span>Escaliers</span>
                 <strong>Escalier intérieur limon central</strong>
@@ -312,34 +433,23 @@
             </div>
           </div>
 
-          <div class="gallery-item" data-title="Garde-corps métallique de balcon" data-category-label="Garde-corps" data-image="images/realisations/images_5.png">
+          <div class="gallery-item" data-title="Portail monumental en acier ajouré — Atelier Kalaban Koro" data-category-label="Portes &amp; Portails" data-image="images/accueil/hero.jpg">
             <div class="ph-image">
-              <img src="images/realisations/images_5.png" alt="Garde-corps balcon" />
+              <img src="images/accueil/hero.jpg" alt="Portail ajouré ferronnerie d'art TMV" />
               <div class="gallery-caption">
-                <span>Garde-corps</span>
-                <strong>Garde-corps de terrasse</strong>
+                <span>Ferronnerie</span>
+                <strong>Portail métallique ajouré</strong>
                 <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-title="Vitrine commerciale vitrée pour boutique" data-category-label="Vitrines" data-image="images/realisations/images_7.png">
+          <div class="gallery-item" data-title="Structure métallique &amp; verrière d'atelier" data-category-label="Structures" data-image="images/realisations/realisation1.jpg">
             <div class="ph-image">
-              <img src="images/realisations/images_7.png" alt="Vitrine commerciale" />
+              <img src="images/realisations/realisation1.jpg" alt="Ossature métallique et verrière" />
               <div class="gallery-caption">
-                <span>Vitrines</span>
-                <strong>Vitrine commerciale lumineuse</strong>
-                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-title="Porte de sécurité métallique" data-category-label="Portes" data-image="images/realisations/images_9.jpg">
-            <div class="ph-image">
-              <img src="images/realisations/images_9.jpg" alt="Porte de sécurité" />
-              <div class="gallery-caption">
-                <span>Sécurité</span>
-                <strong>Porte métallique blindée</strong>
+                <span>Structures</span>
+                <strong>Ossature métallique &amp; Verrière</strong>
                 <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
               </div>
             </div>
@@ -348,25 +458,25 @@
 
         <div style="text-align:center;margin-top:var(--space-5);">
           <a href="realisations.html" class="btn btn-outline-dark">
-            Voir toute la galerie chantiers
+            <i class="bi bi-images"></i> Voir toute notre galerie chantiers
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ TÉMOIGNAGES ============ -->
+    <!-- ============ TÉMOIGNAGES CLIENTS ============ -->
     <section>
       <div class="container">
         <div class="section-head center reveal">
-          <span class="eyebrow">Témoignages</span>
-          <h2>La satisfaction de nos clients</h2>
-          <p class="lede" style="margin-inline:auto;">Ce que nos clients à Bamako retiennent de notre collaboration.</p>
+          <span class="eyebrow">Retours d'Expérience</span>
+          <h2>Ce que disent nos clients à Bamako</h2>
+          <p class="lede" style="margin-inline:auto;">La satisfaction de nos clients est notre meilleure recommandation.</p>
         </div>
 
         <div class="grid grid-3 reveal">
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <blockquote>« TMV a posé le portail et les baies vitrées de notre villa à Kalaban Koro. Travail propre, soudures bien meulées et délais respectés. »</blockquote>
+            <blockquote>« TMV a posé le portail et les baies vitrées de notre villa à Kalaban Koro. Travail propre, soudures bien meulées et délais parfaitement respectés. »</blockquote>
             <div class="client-meta">
               <div class="client-avatar">MS</div>
               <div class="client-info">
@@ -378,59 +488,26 @@
 
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <blockquote>« Nous avons commandé les garde-corps en inox et les cloisons vitrées pour un bâtiment à l'ACI 2000. Équipe professionnelle et disponible. »</blockquote>
+            <blockquote>« En tant que maître d'œuvre, j'ai confié à Abdramane Dembélé les garde-corps en inox et les cloisons vitrées d'un bâtiment à l'ACI 2000. Très réactif et sérieux. »</blockquote>
             <div class="client-meta">
               <div class="client-avatar">OT</div>
               <div class="client-info">
                 <strong>Ousmane T.</strong>
-                <span>Maître d'ouvrage BTP</span>
+                <span>Maître d'œuvre BTP</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <div class="stars">★★★★★</div>
-            <blockquote>« Notre vitrine commerciale a été réalisée et installée rapidement. La qualité du verre et la robustesse du cadre sont impeccables. »</blockquote>
+            <blockquote>« Notre vitrine commerciale a été réalisée et installée rapidement. La qualité du verre et la robustesse du cadre métallique sont impeccables. »</blockquote>
             <div class="client-meta">
               <div class="client-avatar">FC</div>
               <div class="client-info">
                 <strong>Fatoumata C.</strong>
-                <span>Commerce à Bamako</span>
+                <span>Gérante de showroom à Bamako</span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ POURQUOI NOUS CHOISIR ============ -->
-    <section class="bg-dark">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" style="color:var(--tmv-sky);">Nos Engagements</span>
-          <h2>Pourquoi choisir TMV-SARL ?</h2>
-        </div>
-
-        <div class="grid grid-4 reveal">
-          <div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);padding:var(--space-4);">
-            <div class="card-icon" style="background:var(--tmv-primary);color:#fff;"><i class="bi bi-patch-check"></i></div>
-            <h3 style="color:#fff;">Qualité Certifiée</h3>
-            <p style="color:var(--grey-300);font-size:0.875rem;">Sélection d'aciers de qualité et de verres conformes aux normes de sécurité.</p>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);padding:var(--space-4);">
-            <div class="card-icon" style="background:var(--tmv-primary);color:#fff;"><i class="bi bi-rulers"></i></div>
-            <h3 style="color:#fff;">Travail Sur-Mesure</h3>
-            <p style="color:var(--grey-300);font-size:0.875rem;">Adaptation précise aux cotes de votre chantier et à vos choix esthétiques.</p>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);padding:var(--space-4);">
-            <div class="card-icon" style="background:var(--tmv-primary);color:#fff;"><i class="bi bi-clock-history"></i></div>
-            <h3 style="color:#fff;">Respect des Délais</h3>
-            <p style="color:var(--grey-300);font-size:0.875rem;">Planning de fabrication clair pour assurer la livraison à la date convenue.</p>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);padding:var(--space-4);">
-            <div class="card-icon" style="background:var(--tmv-primary);color:#fff;"><i class="bi bi-tools"></i></div>
-            <h3 style="color:#fff;">Service Après-Pose</h3>
-            <p style="color:var(--grey-300);font-size:0.875rem;">Assistance et disponibilité de nos artisans pour tout réglage post-installation.</p>
           </div>
         </div>
       </div>
@@ -441,16 +518,16 @@
       <div class="container">
         <div class="grid grid-2 reveal" style="align-items:flex-start;gap:var(--space-6);">
           <div>
-            <span class="eyebrow">Contactez-nous</span>
-            <h2>Demandez votre devis gratuit</h2>
-            <p class="lede">Remplissez les informations ci-dessous. Votre demande est automatiquement formatée pour transmission directe à notre équipe sur WhatsApp.</p>
+            <span class="eyebrow">Devis Rapide</span>
+            <h2>Demandez votre estimation gratuite</h2>
+            <p class="lede">Remplissez les informations de votre projet. Notre équipe prépare automatiquement votre message pour échange direct sur WhatsApp.</p>
             
             <div class="contact-info-card" style="margin-top:var(--space-5);">
-              <h3 style="color:#fff;font-size:1.1rem;">Coordonnées de l'Atelier</h3>
+              <h3 style="color:#fff;font-size:1.1rem;">Coordonnées Directes de l'Atelier</h3>
               <div class="info-row">
                 <span class="ico"><i class="bi bi-geo-alt"></i></span>
                 <div>
-                  <strong>Adresse</strong>
+                  <strong>Adresse de l'Atelier</strong>
                   <p>Kalaban Koro, Bamako, Mali</p>
                 </div>
               </div>
@@ -464,8 +541,15 @@
               <div class="info-row">
                 <span class="ico"><i class="bi bi-whatsapp"></i></span>
                 <div>
-                  <strong>WhatsApp</strong>
+                  <strong>WhatsApp Officiel</strong>
                   <a href="https://wa.me/22399967263" target="_blank" rel="noopener">+223 99 96 72 63</a>
+                </div>
+              </div>
+              <div class="info-row">
+                <span class="ico"><i class="bi bi-envelope"></i></span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -476,33 +560,33 @@
               <div class="form-grid">
                 <div class="field">
                   <label for="devisNom">Nom complet <span class="req">*</span></label>
-                  <input type="text" id="devisNom" name="nom" required placeholder="Votre nom" />
+                  <input type="text" id="devisNom" name="nom" required placeholder="Votre nom complet" />
                   <span class="error-msg">Veuillez indiquer votre nom.</span>
                 </div>
                 <div class="field">
-                  <label for="devisTel">Numéro de téléphone <span class="req">*</span></label>
+                  <label for="devisTel">Numéro de téléphone / WhatsApp <span class="req">*</span></label>
                   <input type="tel" id="devisTel" name="telephone" required placeholder="+223 00 00 00 00" />
-                  <span class="error-msg">Numéro de téléphone invalide.</span>
+                  <span class="error-msg">Numéro de téléphone requis.</span>
                 </div>
                 <div class="field">
                   <label for="devisPrestation">Prestation souhaitée <span class="req">*</span></label>
                   <select id="devisPrestation" name="prestation" required>
-                    <option value="">Sélectionner...</option>
-                    <option>Portail métallique</option>
+                    <option value="">Sélectionner une prestation...</option>
+                    <option>Portail métallique / clôture</option>
                     <option>Porte blindée de sécurité</option>
-                    <option>Garde-corps / rampe</option>
+                    <option>Garde-corps / rampe (acier ou inox)</option>
                     <option>Escalier métallique</option>
                     <option>Baie vitrée coulissante</option>
                     <option>Vitrage / miroiterie</option>
-                    <option>Vitrine commerciale</option>
+                    <option>Vitrine commerciale / devanture</option>
                     <option>Charpente &amp; ossature métallique</option>
-                    <option>Autre ouvrage</option>
+                    <option>Autre ouvrage sur mesure</option>
                   </select>
                   <span class="error-msg">Veuillez choisir une prestation.</span>
                 </div>
                 <div class="field">
                   <label for="devisLoc">Quartier / Ville <span class="req">*</span></label>
-                  <input type="text" id="devisLoc" name="localisation" required placeholder="Ex : Kalaban Koro, Bamako" />
+                  <input type="text" id="devisLoc" name="localisation" required placeholder="Ex : Kalaban Koro, Golf, ACI 2000" />
                   <span class="error-msg">Veuillez préciser la localisation.</span>
                 </div>
                 <div class="field full">
@@ -510,31 +594,34 @@
                   <input type="text" id="devisDim" name="dimensions" placeholder="Ex : 2,20m x 3,00m" />
                 </div>
                 <div class="field full">
-                  <label for="devisDesc">Description du projet <span class="req">*</span></label>
-                  <textarea id="devisDesc" name="description" required placeholder="Décrivez votre besoin (type d'ouvrage, finitions, contraintes)..."></textarea>
+                  <label for="devisDesc">Description de votre projet <span class="req">*</span></label>
+                  <textarea id="devisDesc" name="description" required placeholder="Décrivez votre besoin : style souhaité, type de verre, délai souhaité..."></textarea>
                   <span class="error-msg">Veuillez décrire votre projet.</span>
                 </div>
               </div>
-              <button type="submit" class="btn btn-whatsapp btn-block" style="padding:0.9rem;">
+              <button type="submit" class="btn btn-whatsapp btn-block" style="padding:0.95rem;">
                 <i class="bi bi-whatsapp"></i> Envoyer ma demande via WhatsApp
               </button>
+              <p style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin-top:var(--space-2);">
+                Vos informations ouvrent directement votre discussion sécurisée avec l'atelier TMV.
+              </p>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BANDEAU FINAL -->
+    <!-- BANDEAU FINAL CTA -->
     <section class="section-tight">
       <div class="container">
         <div class="cta-band reveal">
           <div>
-            <h2>Un projet de métallerie ou de vitrage ?</h2>
-            <p class="lede" style="color:var(--tmv-sky-soft);">Discutez directement avec un artisan pour une estimation claire.</p>
+            <h2>Vous avez un plan ou une photo d'inspiration ?</h2>
+            <p class="lede" style="color:var(--grey-200);">Envoyez-nous directement votre photo sur WhatsApp et obtenez l'avis technique de nos artisans.</p>
           </div>
           <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
-            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="btn btn-whatsapp">
-              <i class="bi bi-whatsapp"></i> WhatsApp Direct
+            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20j'ai%20une%20photo%20ou%20un%20plan%20%C3%A0%20vous%20soumettre." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <i class="bi bi-whatsapp"></i> Soumettre mon plan sur WhatsApp
             </a>
             <a href="contact.html" class="btn btn-outline-white">Nous contacter</a>
           </div>
@@ -555,7 +642,7 @@
               <span style="color:var(--tmv-sky);">Tafoutien Métallique &amp; Vitrages</span>
             </span>
           </a>
-          <p>Conception, fabrication et pose d'ouvrages métalliques et vitrés sur mesure à Kalaban Koro, Bamako, Mali.</p>
+          <p>Fabrication et pose d'ouvrages métalliques et vitrés d'exception à Kalaban Koro, Bamako et partout au Mali.</p>
           <div class="social-row" aria-label="Réseaux sociaux">
             <a href="https://wa.me/22399967263" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             <a href="tel:+22399967263" aria-label="Téléphone"><i class="bi bi-telephone"></i></a>
@@ -567,28 +654,28 @@
           <ul class="footer-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="a-propos.html">À propos de TMV</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html">Nos services</a></li>
             <li><a href="realisations.html">Réalisations</a></li>
-            <li><a href="equipe.html">Équipe</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="equipe.html">Notre équipe</a></li>
+            <li><a href="contact.html">Contact &amp; Accès</a></li>
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Prestations</h4>
           <ul class="footer-links">
             <li><a href="services.html#portes">Portes &amp; Portails</a></li>
             <li><a href="services.html#garde-corps">Garde-corps &amp; Rampes</a></li>
             <li><a href="services.html#escaliers">Escaliers métalliques</a></li>
-            <li><a href="services.html#baies-vitrees">Baies vitrées</a></li>
+            <li><a href="services.html#baies-vitrees">Baies vitrées coulissantes</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Contact &amp; Atelier</h4>
           <ul class="footer-links">
-            <li>Kalaban Koro, Bamako, Mali</li>
-            <li><a href="tel:+22399967263">+223 99 96 72 63</a></li>
-            <li><a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : 99 96 72 63</a></li>
-            <li><a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
+            <li><i class="bi bi-geo-alt"></i> Kalaban Koro, Bamako, Mali</li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+22399967263">+223 99 96 72 63</a></li>
+            <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : 99 96 72 63</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
           </ul>
         </div>
       </div>
@@ -628,7 +715,7 @@
   <!-- Barre d'action mobile -->
   <aside class="mobile-action-bar" aria-label="Contact rapide mobile">
     <div class="mobile-action-grid">
-      <a href="tel:+22399967263" class="mobile-btn call"><i class="bi bi-telephone"></i> Appeler</a>
+      <a href="tel:+22399967263" class="mobile-btn call"><i class="bi bi-telephone-fill"></i> Appeler</a>
       <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="mobile-btn wa"><i class="bi bi-whatsapp"></i> WhatsApp Devis</a>
     </div>
   </aside>

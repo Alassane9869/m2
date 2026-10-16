@@ -50,17 +50,37 @@ function initMobileMenu() {
   const header = document.querySelector(".site-header");
   if (!toggle || !header) return;
 
+  function closeMenu() {
+    header.classList.remove("menu-open");
+    toggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
   toggle.addEventListener("click", function () {
     const isOpen = header.classList.toggle("menu-open");
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    document.body.style.overflow = isOpen ? "hidden" : "";
   });
 
-  // Ferme le menu quand on clique sur un lien
-  document.querySelectorAll(".nav-links a").forEach(function (link) {
+  // Ferme le menu quand on clique sur un lien ou action
+  document.querySelectorAll(".nav-links a, .nav-drawer-cta a").forEach(function (link) {
     link.addEventListener("click", function () {
-      header.classList.remove("menu-open");
-      toggle.setAttribute("aria-expanded", "false");
+      closeMenu();
     });
+  });
+
+  // Ferme en cliquant en dehors du header
+  document.addEventListener("click", function (e) {
+    if (header.classList.contains("menu-open") && !header.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Ferme avec la touche Échap
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && header.classList.contains("menu-open")) {
+      closeMenu();
+    }
   });
 }
 

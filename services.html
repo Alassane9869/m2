@@ -9,10 +9,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- ============ TOP BAR CORPORATE ============ -->
+  <aside class="top-bar">
+    <div class="container top-bar-wrap">
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+        <span class="top-bar-item"><i class="bi bi-geo-alt-fill"></i> Kalaban Koro, Bamako, Mali</span>
+        <span class="top-bar-item"><i class="bi bi-clock-fill"></i> Lun - Sam : 08h00 - 18h30</span>
+      </div>
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+        <span class="top-bar-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></span>
+        <span class="top-bar-item"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : +223 99 96 72 63</a></span>
+      </div>
+    </div>
+  </aside>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -20,24 +35,39 @@
         <img src="images/logo/logo.png" alt="Logo TMV - SARL" class="brand-logo" />
         <span class="brand-text">
           <strong>Tafoutien Métallique &amp; Vitrages</strong>
-          <span>TMV - SARL • Bamako</span>
+          <span>TMV - SARL • Kalaban Koro</span>
         </span>
       </a>
 
       <div class="nav-primary">
-        <nav class="nav-links" aria-label="Navigation principale">
+        <nav class="nav-links" id="mainNav" aria-label="Navigation principale">
           <a href="index.html">Accueil</a>
           <a href="a-propos.html">À propos</a>
           <a href="services.html" aria-current="page">Services</a>
           <a href="realisations.html">Réalisations</a>
           <a href="equipe.html">Équipe</a>
           <a href="contact.html">Contact</a>
+
+          <!-- Actions tiroir mobile -->
+          <div class="nav-drawer-cta" style="display:none;">
+            <a href="index.html#devis" class="btn btn-primary btn-block">
+              <i class="bi bi-file-earmark-text"></i> Demander un devis gratuit
+            </a>
+            <a href="tel:+22399967263" class="btn btn-outline-dark btn-block">
+              <i class="bi bi-telephone-fill"></i> Appeler : +223 99 96 72 63
+            </a>
+            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+              <i class="bi bi-whatsapp"></i> Échanger sur WhatsApp
+            </a>
+          </div>
         </nav>
         <div class="nav-cta">
-          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV-SARL">
+          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV-SARL au +223 99 96 72 63">
             <i class="bi bi-telephone-fill"></i> +223 99 96 72 63
           </a>
-          <a href="index.html#devis" class="btn btn-primary">Demander un devis</a>
+          <a href="index.html#devis" class="btn btn-primary">
+            Demander un devis <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
         <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -88,13 +118,13 @@
         <div id="portes" class="split reverse reveal">
           <div>
             <div class="hero-img-wrap" style="box-shadow:var(--shadow-1);">
-              <img src="images/realisations/images_1.png" alt="Portails et portes métalliques blindées" style="height:360px;object-fit:cover;" />
+              <img src="images/services/portail-moderne-villa.jpg" alt="Portail coulissant moderne découpe laser pour villa à Bamako" style="height:360px;object-fit:cover;" />
             </div>
           </div>
           <div>
             <div class="card-icon"><i class="bi bi-door-closed"></i></div>
             <span class="eyebrow">Protection &amp; Prestige</span>
-            <h2>Portes Blindées &amp; Portails</h2>
+            <h2>Portes Blindées &amp; Portails Laser</h2>
             <p class="lede">Le portail est la première impression de votre propriété. Nous fabriquons des portails coulissants ou à double battant, manuels ou motorisables, ainsi que des portes blindées d'entrée avec serrures multipoints pour une sécurité optimale de votre famille.</p>
             <ul style="margin-block:var(--space-3);color:var(--grey-600);font-size:var(--fs-sm);line-height:1.8;">
               <li><i class="bi bi-check-circle-fill" style="color:var(--accent-cyan);margin-right:6px;"></i> Tôle pleine, découpe laser moderne ou motifs fer forgé</li>
@@ -113,7 +143,7 @@
         <div id="garde-corps" class="split reveal">
           <div>
             <div class="hero-img-wrap" style="box-shadow:var(--shadow-1);">
-              <img src="images/realisations/images_5.png" alt="Garde-corps en inox et verre" style="height:360px;object-fit:cover;" />
+              <img src="images/services/garde-corps-terrasse.jpg" alt="Garde-corps en inox 316 et verre de balcon villa" style="height:360px;object-fit:cover;" />
             </div>
           </div>
           <div>
