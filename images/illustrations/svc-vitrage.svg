@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Illustration svc-vitrage">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+
+
+    <rect x="0" y="0" width="600" height="450" fill="url(#skyBg)"/>
+    <rect x="90" y="80" width="400" height="330" fill="#FFFFFF" stroke="#0B3B57" stroke-width="6"/>
+    <rect x="106.0" y="96" width="178.0" height="148" fill="url(#skyPane)"/><rect x="296.0" y="96" width="178.0" height="148" fill="url(#skyPane)"/><rect x="106.0" y="256" width="178.0" height="148" fill="url(#skyPane)"/><rect x="296.0" y="256" width="178.0" height="148" fill="url(#skyPane)"/>
+    <rect x="0" y="410" width="600" height="40" fill="#E4F4FF"/>
+    
+</svg>

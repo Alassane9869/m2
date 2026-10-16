@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Illustration gallery-structure-metallique">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+
+
+    <rect width="700" height="500" fill="url(#skyBg)"/>
+    <rect x="0" y="430" width="700" height="70" fill="#E4F4FF"/>
+    <g stroke="#0B3B57" stroke-width="7" fill="none">
+      <line x1="90" y1="430" x2="90" y2="120"/>
+      <line x1="610" y1="430" x2="610" y2="120"/>
+      <line x1="90" y1="120" x2="350" y2="60"/>
+      <line x1="610" y1="120" x2="350" y2="60"/>
+      <line x1="90" y1="260" x2="610" y2="260"/>
+      <line x1="90" y1="120" x2="610" y2="120"/>
+    </g>
+    <rect x="110" y="270" width="80" height="150" fill="url(#skyPaneLight)"/><rect x="210" y="270" width="80" height="150" fill="url(#skyPaneLight)"/><rect x="310" y="270" width="80" height="150" fill="url(#skyPaneLight)"/><rect x="410" y="270" width="80" height="150" fill="url(#skyPaneLight)"/><rect x="510" y="270" width="80" height="150" fill="url(#skyPaneLight)"/>
+    
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Illustration about-workshop">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+<rect width="700" height="500" fill="url(#skyBg)"/>
+
+<rect x="0" y="360" width="700" height="140" fill="#E4F4FF"/>
+<rect x="40" y="80" width="620" height="280" fill="#FFFFFF" stroke="#0B3B57" stroke-width="5"/>
+<rect x="65" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="160" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="255" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="350" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="445" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="540" y="105" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="65" y="175" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="160" y="175" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="255" y="175" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="350" y="175" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="445" y="175" width="82" height="55" fill="url(#skyPaneLight)"/><rect x="540" y="175" width="82" height="55" fill="url(#skyPaneLight)"/>
+<rect x="40" y="360" width="620" height="16" fill="#0B3B57" opacity="0.18"/>
+<g stroke="#0B3B57" stroke-width="6" fill="none">
+  <path d="M120 460 L120 380 M180 460 L180 380 M120 420 L180 420"/>
+  <path d="M520 460 L520 370 L580 370 L580 460" />
+</g>
+<circle cx="600" cy="150" r="26" fill="#63C2F2" opacity="0.5"/>
+
+</svg>

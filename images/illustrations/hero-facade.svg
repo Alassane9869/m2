@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Illustration hero-facade">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+<rect width="800" height="480" fill="url(#skyBg)"/>
+
+<rect x="0" y="420" width="800" height="180" fill="#E4F4FF"/>
+<g>
+  <rect x="60" y="60" width="360" height="420" fill="#0B3B57" opacity="0.06"/>
+  <rect x="60" y="60" width="360" height="420" fill="none" stroke="#0B3B57" stroke-width="6"/>
+  <rect x="66" y="66" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="66" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="66" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="66" width="78" height="58" fill="url(#skyPane)" /><rect x="66" y="136" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="136" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="136" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="136" width="78" height="58" fill="url(#skyPane)" /><rect x="66" y="206" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="206" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="206" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="206" width="78" height="58" fill="url(#skyPane)" /><rect x="66" y="276" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="276" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="276" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="276" width="78" height="58" fill="url(#skyPane)" /><rect x="66" y="346" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="346" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="346" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="346" width="78" height="58" fill="url(#skyPane)" /><rect x="66" y="416" width="78" height="58" fill="url(#skyPane)" /><rect x="156" y="416" width="78" height="58" fill="url(#skyPane)" /><rect x="246" y="416" width="78" height="58" fill="url(#skyPane)" /><rect x="336" y="416" width="78" height="58" fill="url(#skyPane)" />
+</g>
+<g>
+  <rect x="450" y="140" width="290" height="340" fill="#FFFFFF" stroke="#0B3B57" stroke-width="6"/>
+  <rect x="456" y="146" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="553" y="146" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="650" y="146" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="456" y="214" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="553" y="214" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="650" y="214" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="456" y="282" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="553" y="282" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="650" y="282" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="456" y="350" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="553" y="350" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="650" y="350" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="456" y="418" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="553" y="418" width="85" height="56" fill="url(#skyPaneLight)" /><rect x="650" y="418" width="85" height="56" fill="url(#skyPaneLight)" />
+</g>
+<rect x="0" y="470" width="800" height="10" fill="#0B3B57" opacity="0.15"/>
+<g stroke="#0B3B57" stroke-width="5" opacity="0.35">
+  <line x1="440" y1="480" x2="440" y2="120"/>
+  <line x1="440" y1="120" x2="760" y2="120"/>
+  <line x1="760" y1="120" x2="760" y2="480"/>
+</g>
+
+</svg>

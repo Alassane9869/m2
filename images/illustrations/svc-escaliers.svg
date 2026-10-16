@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Illustration svc-escaliers">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+
+
+    <rect x="0" y="0" width="600" height="450" fill="url(#skyBg)"/>
+    <rect x="0" y="398" width="600" height="52" fill="#E4F4FF"/>
+    <rect x="100" y="380" width="70" height="18" fill="url(#skyPane)"/><rect x="170" y="325" width="70" height="18" fill="url(#skyPane)"/><rect x="240" y="270" width="70" height="18" fill="url(#skyPane)"/><rect x="310" y="215" width="70" height="18" fill="url(#skyPane)"/><rect x="380" y="160" width="70" height="18" fill="url(#skyPane)"/><rect x="450" y="105" width="70" height="18" fill="url(#skyPane)"/>
+    <path d="M100 398 L100 90" stroke="#0B3B57" stroke-width="6" fill="none"/>
+    <path d="M100 90 Q 300 40 520 90" stroke="#0B3B57" stroke-width="6" fill="none"/>
+    <path d="M520 90 L520 178" stroke="#0B3B57" stroke-width="6" fill="none"/>
+    
+</svg>

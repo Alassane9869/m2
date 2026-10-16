@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Illustration svc-metallerie">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+
+
+    <rect x="0" y="0" width="600" height="450" fill="url(#skyBg)"/>
+    <rect x="60" y="80" width="30" height="330" fill="#0B3B57" opacity="0.85"/>
+    <rect x="510" y="80" width="30" height="330" fill="#0B3B57" opacity="0.85"/>
+    <rect x="100" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="128" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="156" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="184" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="212" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="240" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="268" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="296" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="324" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="352" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="380" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="408" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="436" y="120" width="14" height="260" fill="url(#skyPane)"/><rect x="464" y="120" width="14" height="260" fill="url(#skyPane)"/>
+    <rect x="90" y="150" width="420" height="10" fill="#0B3B57" opacity="0.6"/>
+    <rect x="90" y="330" width="420" height="10" fill="#0B3B57" opacity="0.6"/>
+    <rect x="0" y="410" width="600" height="40" fill="#E4F4FF"/>
+    
+</svg>

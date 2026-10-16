@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Illustration gallery-rampe-escalier">
+
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F4FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="skyPane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ED8F7"/>
+      <stop offset="1" stop-color="#2EA8E8"/>
+    </linearGradient>
+    <linearGradient id="skyPaneLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9E9FC"/>
+      <stop offset="1" stop-color="#63C2F2"/>
+    </linearGradient>
+  </defs>
+
+
+    <rect width="700" height="500" fill="url(#skyBg)"/>
+    <rect x="0" y="430" width="700" height="70" fill="#E4F4FF"/>
+    <rect x="95" y="210" width="510" height="16" fill="#0B3B57"/>
+    <rect x="110" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="152" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="194" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="236" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="278" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="320" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="362" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="404" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="446" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="488" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="530" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="572" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/><rect x="614" y="220" width="12" height="190" fill="#0B3B57" opacity="0.85"/>
+    <rect x="95" y="405" width="510" height="14" fill="#0B3B57" opacity="0.6"/>
+    
+</svg>

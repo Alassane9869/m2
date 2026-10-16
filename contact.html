@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | TMV - Métallerie &amp; Vitrages Bamako</title>
+  <meta name="description" content="Contactez TMV-SARL à Kalaban Koro, Bamako, Mali : email tmvsarl@gmail.com, WhatsApp, ou via notre formulaire de contact en ligne." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TMV</span>
+        <span class="brand-text"><strong>Tafotien Métallique &amp; Vitrages</strong><span>TMV - SARL</span></span>
+      </a>
+      <div class="nav-primary">
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="equipe.html">Équipe</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <div class="nav-cta"><a href="index.html#devis" class="btn btn-primary">Demander un devis</a></div>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Contact</p>
+        <h1>Contactez-nous</h1>
+        <p class="lede" style="color:var(--steel-200);">Une question, un projet ? Notre équipe vous répond rapidement.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid grid-2 reveal" style="align-items:flex-start;gap:var(--space-6);">
+
+        <!-- COORDONNÉES -->
+        <div class="contact-info-card">
+          <h3 style="color:#fff;">Nos coordonnées</h3>
+
+          <div class="info-row">
+            <span class="ico"><i class="bi bi-geo-alt"></i></span>
+            <div><strong>Adresse</strong><p>Kalaban Koro, Bamako, Mali</p></div>
+          </div>
+
+          <div class="info-row">
+            <span class="ico"><i class="bi bi-envelope"></i></span>
+            <div><strong>Email</strong><a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></div>
+          </div>
+
+          <div class="info-row">
+            <span class="ico"><i class="bi bi-telephone"></i></span>
+            <div><strong>Téléphone</strong><p>223 99 96 72 63</p></div>
+          </div>
+
+          <div class="info-row">
+            <span class="ico"><i class="bi bi-whatsapp"></i></span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="99967263" id="contactWhatsappLink">Discuter sur WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="ico"><i class="bi bi-clock"></i></span>
+            <div><strong>Horaires</strong><p>Lundi – Samedi : horaires à préciser</p></div>
+          </div>
+
+          <a href="#" id="contactWhatsappBtn" class="btn btn-whatsapp btn-block" style="margin-top:var(--space-2);">
+            <i class="bi bi-whatsapp"></i> Nous écrire sur WhatsApp
+          </a>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div>
+          <h3>Envoyez-nous un message</h3>
+          <p class="lede" style="margin-bottom:var(--space-4);">Ce site n'utilise pas de base de données : votre message ouvrira directement votre logiciel de messagerie, pré-rempli avec vos informations.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="contactNom">Nom et prénom <span class="req">*</span></label>
+                <input type="text" id="contactNom" name="nom" required />
+                <span class="error-msg">Veuillez indiquer votre nom.</span>
+              </div>
+              <div class="field">
+                <label for="contactTel">Téléphone <span class="req">*</span></label>
+                <input type="tel" id="contactTel" name="telephone" required placeholder="+223 00 00 00 00" />
+                <span class="error-msg">Numéro de téléphone invalide.</span>
+              </div>
+              <div class="field full">
+                <label for="contactEmailInput">Email <span class="req">*</span></label>
+                <input type="email" id="contactEmailInput" name="email" required />
+                <span class="error-msg">Adresse email invalide.</span>
+              </div>
+              <div class="field full">
+                <label for="contactService">Service recherché <span class="req">*</span></label>
+                <select id="contactService" name="service" required>
+                  <option value="">Choisir...</option>
+                  <option>Métallerie</option>
+                  <option>Porte métallique</option>
+                  <option>Garde-corps / rampe</option>
+                  <option>Escalier métallique</option>
+                  <option>Vitrage</option>
+                  <option>Baie vitrée</option>
+                  <option>Vitrine / cloison</option>
+                  <option>Autre</option>
+                </select>
+                <span class="error-msg">Veuillez choisir un service.</span>
+              </div>
+              <div class="field full">
+                <label for="contactMessage">Message <span class="req">*</span></label>
+                <textarea id="contactMessage" name="message" required></textarea>
+                <span class="error-msg">Veuillez écrire votre message.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="bi bi-send"></i> Envoyer le message
+            </button>
+            <p class="form-note hint">En envoyant ce formulaire, votre logiciel de messagerie s'ouvrira avec un message pré-rempli à destination de tmvsarl@gmail.com.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALISATION -->
+    <section class="bg-grey">
+      <div class="container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Nous trouver</span>
+          <h2>Kalaban Koro, Bamako</h2>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Localisation TMV-SARL — Kalaban Koro, Bamako, Mali"
+            src="https://www.google.com/maps?q=Kalaban%20Koro,%20Bamako,%20Mali&output=embed"
+            width="100%" height="380" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="hint" style="margin-top:var(--space-2);">Carte indicative du quartier de Kalaban Koro. L'adresse exacte pourra être précisée dès qu'elle sera communiquée.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" style="margin-bottom:var(--space-3);display:flex;">
+            <span class="brand-mark">TMV</span>
+            <span class="brand-text"><strong>TMV - SARL</strong><span>Métallerie &amp; Vitrages</span></span>
+          </a>
+          <p>Votre partenaire en métallerie et vitrages de qualité. Fabrication et installation sur mesure à Bamako, Mali.</p>
+          <div class="social-row" aria-label="Réseaux sociaux">
+            <a href="#" aria-label="Facebook" title="Lien à ajouter"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram" title="Lien à ajouter"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" title="Lien à ajouter"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="WhatsApp" title="Lien à ajouter"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="equipe.html">Équipe</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#metallerie">Métallerie</a></li>
+            <li><a href="services.html#portes">Portes métalliques</a></li>
+            <li><a href="services.html#garde-corps">Garde-corps &amp; rampes</a></li>
+            <li><a href="services.html#vitrage">Vitrage</a></li>
+            <li><a href="services.html#baies-vitrees">Baies vitrées</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>Kalaban Koro, Bamako, Mali</li>
+            <li><a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
+            <li><a href="tel:#">Téléphone à ajouter</a></li>
+            <li><a href="#" id="footerWhatsapp">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear">2026</span> TMV - SARL. Tous droits réservés.</span>
+        <span>Conçu pour Tafotien Métallique et Vitrages</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Lie les liens/boutons WhatsApp additionnels de la page Contact à l'utilitaire commun
+    document.addEventListener("DOMContentLoaded", function () {
+      ["contactWhatsappLink", "contactWhatsappBtn", "footerWhatsapp"].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.addEventListener("click", function (e) {
+            e.preventDefault();
+            const el2 = document.getElementById("whatsappFloat");
+            if (el2) el2.click();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
