@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nos Réalisations | TMV - Métallerie &amp; Vitrages Bamako</title>
-  <meta name="description" content="Galerie des réalisations de TMV-SARL : métallerie, portes, escaliers, garde-corps, vitrages, baies vitrées et vitrines à Bamako, Mali." />
-  <meta name="keywords" content="réalisations métallerie, galerie vitrage Bamako, travaux métalliques Mali" />
+  <title>Nos Réalisations | TMV-SARL • Métallerie &amp; Vitrages Bamako</title>
+  <meta name="description" content="Découvrez la galerie de nos réalisations à Bamako et au Mali : portails métalliques, baies vitrées, garde-corps inox, escaliers design et vitrines de commerces." />
+  <meta name="keywords" content="réalisations métallerie Bamako, galerie vitrage Mali, chantiers métallerie Kalaban Koro, photos portails Bamako" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -17,9 +17,13 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand">
-        <span class="brand-mark">TMV</span>
-        <span class="brand-text"><strong>Tafotien Métallique &amp; Vitrages</strong><span>TMV - SARL</span></span>
+        <img src="images/logo/logo.png" alt="Logo TMV - SARL" class="brand-logo" />
+        <span class="brand-text">
+          <strong>Tafoutien Métallique &amp; Vitrages</strong>
+          <span>TMV - SARL • Bamako</span>
+        </span>
       </a>
+
       <div class="nav-primary">
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="index.html">Accueil</a>
@@ -29,8 +33,15 @@
           <a href="equipe.html">Équipe</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="nav-cta"><a href="index.html#devis" class="btn btn-primary">Demander un devis</a></div>
-        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-cta">
+          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV-SARL">
+            <i class="bi bi-telephone-fill"></i> +223 99 96 72 63
+          </a>
+          <a href="index.html#devis" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -40,130 +51,208 @@
       <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container">
         <p class="breadcrumb"><a href="index.html">Accueil</a> / Réalisations</p>
-        <h1>Nos réalisations</h1>
-        <p class="lede" style="color:var(--steel-200);">Un aperçu de nos ouvrages en métallerie et vitrage.</p>
+        <h1>Nos réalisations &amp; Chantiers</h1>
+        <p class="lede" style="color:var(--steel-200);">Explorez en images la diversité de nos ouvrages en métallerie, ferronnerie et vitrage à Bamako.</p>
       </div>
     </section>
 
     <section>
       <div class="container">
+        <!-- Filtres par catégorie -->
         <div class="filters reveal" role="group" aria-label="Filtrer les réalisations par catégorie">
-          <button class="filter-btn active" data-filter="all">Toutes</button>
-          <button class="filter-btn" data-filter="metallerie">Métallerie</button>
-          <button class="filter-btn" data-filter="portes">Portes</button>
-          <button class="filter-btn" data-filter="escaliers">Escaliers</button>
-          <button class="filter-btn" data-filter="garde-corps">Garde-corps</button>
-          <button class="filter-btn" data-filter="vitrage">Vitrage</button>
+          <button class="filter-btn active" data-filter="all">Toutes les réalisations</button>
+          <button class="filter-btn" data-filter="portes">Portes &amp; Portails</button>
           <button class="filter-btn" data-filter="baies-vitrees">Baies vitrées</button>
-          <button class="filter-btn" data-filter="vitrines">Vitrines</button>
+          <button class="filter-btn" data-filter="escaliers">Escaliers</button>
+          <button class="filter-btn" data-filter="garde-corps">Garde-corps &amp; Rampes</button>
+          <button class="filter-btn" data-filter="vitrage">Vitrages &amp; Vitrines</button>
+          <button class="filter-btn" data-filter="metallerie">Structures &amp; Charpentes</button>
         </div>
 
+        <!-- Grille de réalisations -->
         <div class="gallery-grid reveal">
 
-          <div class="gallery-item" data-category="portes" data-category-label="Portes" data-title="Portail résidentiel double vantail" data-image="images/illustrations/gallery-portail.svg">
-            <div class="ph-image"><img src="images/realisations/images_1.png" alt="Illustration : Portail résidentiel" />
-              <div class="gallery-caption"><strong>Portail résidentiel</strong><span>Portes</span></div>
+          <!-- 1. Portail résidentiel -->
+          <div class="gallery-item" data-category="portes" data-category-label="Portes &amp; Portails" data-title="Portail métallique résidentiel double vantail" data-image="images/realisations/images_1.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_1.png" alt="Portail métallique double vantail Bamako" />
+              <div class="gallery-caption">
+                <span>Portes &amp; Portails</span>
+                <strong>Portail résidentiel double vantail</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="vitrage" data-category-label="Vitrage" data-title="Baie vitrée coulissante — salon" data-image="images/illustrations/gallery-baie-coulissante.svg">
-            <div class="ph-image"><img src="images/realisations/images_2.png" alt="Illustration : Baie vitrée coulissante" />
-              <div class="gallery-caption"><strong>Baie vitrée coulissante</strong><span>Vitrage</span></div>
+          <!-- 2. Baie vitrée coulissante -->
+          <div class="gallery-item" data-category="baies-vitrees" data-category-label="Baies vitrées" data-title="Baie vitrée coulissante grand format — Villa contemporaine" data-image="images/realisations/images_2.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_2.png" alt="Grande baie vitrée coulissante salon" />
+              <div class="gallery-caption">
+                <span>Baies vitrées</span>
+                <strong>Baie vitrée coulissante salon</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="escaliers" data-category-label="Escaliers" data-title="Escalier métallique intérieur" data-image="images/illustrations/gallery-escalier.svg">
-            <div class="ph-image"><img src="images/realisations/images_3.png" alt="Illustration : Escalier intérieur" />
-              <div class="gallery-caption"><strong>Escalier intérieur</strong><span>Escaliers</span></div>
+          <!-- 3. Escalier métallique intérieur -->
+          <div class="gallery-item" data-category="escaliers" data-category-label="Escaliers" data-title="Escalier métallique intérieur avec limon central" data-image="images/realisations/images_3.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_3.png" alt="Escalier intérieur limon central design" />
+              <div class="gallery-caption">
+                <span>Escaliers</span>
+                <strong>Escalier intérieur design</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="garde-corps" data-category-label="Garde-corps" data-title="Garde-corps de balcon" data-image="images/illustrations/gallery-garde-corps-balcon.svg">
-            <div class="ph-image"><img src="images/realisations/images_5.png" alt="Illustration : Garde-corps de balcon" />
-              <div class="gallery-caption"><strong>Garde-corps de balcon</strong><span>Garde-corps</span></div>
+          <!-- 4. Garde-corps balcon -->
+          <div class="gallery-item" data-category="garde-corps" data-category-label="Garde-corps" data-title="Garde-corps métallique de balcon &amp; terrasse" data-image="images/realisations/images_5.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_5.png" alt="Garde-corps balcon Kalaban Koro" />
+              <div class="gallery-caption">
+                <span>Garde-corps</span>
+                <strong>Garde-corps terrasse &amp; balcon</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="metallerie" data-category-label="Métallerie" data-title="Structure métallique de toiture" data-image="images/illustrations/gallery-structure-metallique.svg">
-            <div class="ph-image"><img src="images/realisations/images_6.png" alt="Illustration : Structure métallique" />
-              <div class="gallery-caption"><strong>Structure métallique</strong><span>Métallerie</span></div>
+          <!-- 5. Structure métallique -->
+          <div class="gallery-item" data-category="metallerie" data-category-label="Structures métalliques" data-title="Ossature &amp; Charpente métallique industrielle" data-image="images/realisations/images_6.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_6.png" alt="Ossature métallique de toiture Bamako" />
+              <div class="gallery-caption">
+                <span>Structures</span>
+                <strong>Ossature métallique industrielle</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="vitrines" data-category-label="Vitrines" data-title="Vitrine commerciale vitrée" data-image="images/illustrations/gallery-vitrine-commerciale.svg">
-            <div class="ph-image"><img src="images/realisations/images_7.png" alt="Illustration : Vitrine commerciale" />
-              <div class="gallery-caption"><strong>Vitrine commerciale</strong><span>Vitrines</span></div>
+          <!-- 6. Vitrine commerciale -->
+          <div class="gallery-item" data-category="vitrage" data-category-label="Vitrines &amp; Commerces" data-title="Vitrine commerciale panoramique pour boutique" data-image="images/realisations/images_7.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_7.png" alt="Vitrine commerciale vitrée Bamako" />
+              <div class="gallery-caption">
+                <span>Vitrines</span>
+                <strong>Vitrine commerciale panoramique</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="portes" data-category-label="Portes" data-title="Porte de sécurité métallique" data-image="images/illustrations/gallery-porte-securite.svg">
-            <div class="ph-image"><img src="images/realisations/images_9.jpg" alt="Illustration : Porte de sécurité" />
-              <div class="gallery-caption"><strong>Porte de sécurité</strong><span>Portes</span></div>
+          <!-- 7. Porte de sécurité -->
+          <div class="gallery-item" data-category="portes" data-category-label="Portes &amp; Sécurité" data-title="Porte métallique d'entrée blindée et thermo-laquée" data-image="images/realisations/images_9.jpg">
+            <div class="ph-image">
+              <img src="images/realisations/images_9.jpg" alt="Porte métallique de sécurité renforcée" />
+              <div class="gallery-caption">
+                <span>Sécurité</span>
+                <strong>Porte blindée thermo-laquée</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="baies-vitrees" data-category-label="Baies vitrées" data-title="Baie vitrée fixe — bureau" data-image="images/illustrations/gallery-baie-fixe.svg">
-            <div class="ph-image"><img src="images/realisations/realisation1.jpg" alt="Illustration : Baie vitrée fixe" />
-              <div class="gallery-caption"><strong>Baie vitrée fixe</strong><span>Baies vitrées</span></div>
+          <!-- 8. Baie vitrée fixe bureau -->
+          <div class="gallery-item" data-category="baies-vitrees" data-category-label="Baies vitrées" data-title="Baie vitrée fixe d'angle — Espace professionnel" data-image="images/realisations/realisation1.jpg">
+            <div class="ph-image">
+              <img src="images/realisations/realisation1.jpg" alt="Baie vitrée fixe pour bureau" />
+              <div class="gallery-caption">
+                <span>Baies vitrées</span>
+                <strong>Baie vitrée fixe d'angle</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="garde-corps" data-category-label="Garde-corps" data-title="Rampe d'escalier extérieur" data-image="images/illustrations/gallery-rampe-escalier.svg">
-            <div class="ph-image"><img src="images/realisations/realisation2.jpg" alt="Illustration : Rampe d'escalier" />
-              <div class="gallery-caption"><strong>Rampe d'escalier</strong><span>Garde-corps</span></div>
+          <!-- 9. Rampe d'escalier inox -->
+          <div class="gallery-item" data-category="garde-corps" data-category-label="Garde-corps &amp; Inox" data-title="Rampe d'escalier en inox et main courante sécurisée" data-image="images/realisations/realisation2.jpg">
+            <div class="ph-image">
+              <img src="images/realisations/realisation2.jpg" alt="Rampe d'escalier extérieur inox" />
+              <div class="gallery-caption">
+                <span>Garde-corps &amp; Inox</span>
+                <strong>Rampe d'escalier inox sécurisée</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
             </div>
           </div>
 
-        </div>
+          <!-- 10. Garde-corps inox 5 barres pose anglaise -->
+          <div class="gallery-item" data-category="garde-corps" data-category-label="Garde-corps" data-title="Garde-corps inox 5 barres pose à l'anglaise" data-image="images/garde-corps-5-barres-pose-a-l-anglaise-sur-escalier-inoxdesign_1.jpg">
+            <div class="ph-image">
+              <img src="images/garde-corps-5-barres-pose-a-l-anglaise-sur-escalier-inoxdesign_1.jpg" alt="Garde-corps 5 barres inox pose anglaise" />
+              <div class="gallery-caption">
+                <span>Garde-corps &amp; Inox</span>
+                <strong>Garde-corps inox 5 lisses</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
+            </div>
+          </div>
 
-        <div class="notice reveal" style="margin-top:var(--space-5);">
-          <i class="bi bi-images"></i>
-          Cette galerie utilise des emplacements réservés. Remplacez chaque <code>.ph-image</code> par une vraie photo (voir README) pour publier vos réalisations.
+          <!-- 11. Porte de service moderne -->
+          <div class="gallery-item" data-category="portes" data-category-label="Portes" data-title="Porte de service métallique ouvrant extérieur" data-image="images/porte-service-ouvrant-exterieur-hybride-minco.webp">
+            <div class="ph-image">
+              <img src="images/porte-service-ouvrant-exterieur-hybride-minco.webp" alt="Porte de service métallique isolée" />
+              <div class="gallery-caption">
+                <span>Portes</span>
+                <strong>Porte de service isolée</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Façade architecturale vitrée -->
+          <div class="gallery-item" data-category="vitrage" data-category-label="Vitrages" data-title="Ensemble menuiserie métallique &amp; vitrage grande hauteur" data-image="images/realisations/images_10.png">
+            <div class="ph-image">
+              <img src="images/realisations/images_10.png" alt="Ensemble métallique et vitrage architectural" />
+              <div class="gallery-caption">
+                <span>Vitrages d'art</span>
+                <strong>Façade vitrée grande hauteur</strong>
+                <div class="zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- BANDEAU CTA -->
     <section class="section-tight bg-grey">
       <div class="container">
         <div class="cta-band reveal">
           <div>
             <h2>Votre projet, notre prochaine réalisation</h2>
-            <p class="lede" style="color:var(--steel-200);">Parlons-en dès maintenant.</p>
+            <p class="lede" style="color:var(--steel-200);">Transmettez-nous vos mesures ou une photo de modèle souhaité pour une estimation gratuite.</p>
           </div>
-          <a href="index.html#devis" class="btn btn-outline">Demander un devis</a>
+          <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
+            <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20commander%20un%20ouvrage%20similaire%20%C3%A0%20vos%20r%C3%A9alisations." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <i class="bi bi-whatsapp"></i> Commander sur WhatsApp
+            </a>
+            <a href="index.html#devis" class="btn btn-outline">Demander un devis en ligne</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- MODAL GALERIE -->
-  <div class="modal-backdrop" id="galleryModal" aria-hidden="true">
-    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Aperçu de la réalisation">
-      <button class="modal-close" aria-label="Fermer">&times;</button>
-      <button class="modal-nav modal-prev" aria-label="Réalisation précédente">&#8249;</button>
-      <button class="modal-nav modal-next" aria-label="Réalisation suivante">&#8250;</button>
-      <div class="ph-image"><img src="images/illustrations/gallery-portail.svg" alt="Réalisation TMV" /></div>
-      <div class="modal-info">
-        <strong>Titre de la réalisation</strong><br />
-        <span>Catégorie</span>
-      </div>
-    </div>
-  </div>
-
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand" style="margin-bottom:var(--space-3);display:flex;">
-            <span class="brand-mark">TMV</span>
-            <span class="brand-text"><strong>TMV - SARL</strong><span>Métallerie &amp; Vitrages</span></span>
+            <img src="images/logo/logo.png" alt="Logo TMV - SARL" class="brand-logo" />
+            <span class="brand-text"><strong>TMV - SARL</strong><span>Tafoutien Métallique &amp; Vitrages</span></span>
           </a>
-          <p>Votre partenaire en métallerie et vitrages de qualité. Fabrication et installation sur mesure à Bamako, Mali.</p>
+          <p>Conception, fabrication et pose d'ouvrages métalliques et vitrés d'exception à Bamako, Kalaban Koro et ses environs.</p>
           <div class="social-row" aria-label="Réseaux sociaux">
-            <a href="#" aria-label="Facebook" title="Lien à ajouter"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram" title="Lien à ajouter"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn" title="Lien à ajouter"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="WhatsApp" title="Lien à ajouter"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/22399967263" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+22399967263" aria-label="Téléphone"><i class="bi bi-telephone"></i></a>
+            <a href="mailto:tmvsarl@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div>
@@ -180,32 +269,61 @@
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html#metallerie">Métallerie</a></li>
-            <li><a href="services.html#portes">Portes métalliques</a></li>
-            <li><a href="services.html#garde-corps">Garde-corps &amp; rampes</a></li>
-            <li><a href="services.html#vitrage">Vitrage</a></li>
+            <li><a href="services.html#portes">Portes &amp; Portails</a></li>
+            <li><a href="services.html#garde-corps">Garde-corps &amp; Rampes</a></li>
+            <li><a href="services.html#escaliers">Escaliers métalliques</a></li>
             <li><a href="services.html#baies-vitrees">Baies vitrées</a></li>
+            <li><a href="services.html#vitrines">Vitrines commerciales</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul class="footer-links">
-            <li>Kalaban Koro, Bamako, Mali</li>
-            <li><a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
-            <li><a href="tel:#">Téléphone à ajouter</a></li>
-            <li><a href="#" id="footerWhatsapp">WhatsApp</a></li>
+            <li><i class="bi bi-geo-alt"></i> Kalaban Koro, Bamako, Mali</li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+22399967263">+223 99 96 72 63</a></li>
+            <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : 99 96 72 63</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="currentYear">2026</span> TMV - SARL. Tous droits réservés.</span>
-        <span>Conçu pour Tafotien Métallique et Vitrages</span>
+        <span>Kalaban Koro, Bamako, Mali</span>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page"><i class="bi bi-arrow-up"></i></button>
+  <!-- Lightbox Modal -->
+  <div class="modal-backdrop" id="galleryModal" role="dialog" aria-modal="true" aria-label="Aperçu agrandi de la réalisation">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Fermer la modal"><i class="bi bi-x-lg"></i></button>
+      <button class="modal-nav modal-prev" aria-label="Image précédente"><i class="bi bi-chevron-left"></i></button>
+      <button class="modal-nav modal-next" aria-label="Image suivante"><i class="bi bi-chevron-right"></i></button>
+      <div class="ph-image">
+        <img src="" alt="" />
+      </div>
+      <div class="modal-info">
+        <div>
+          <strong></strong>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20des%20renseignements." class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <aside class="mobile-action-bar" aria-label="Contact rapide mobile">
+    <div class="mobile-action-grid">
+      <a href="tel:+22399967263" class="mobile-btn call"><i class="bi bi-telephone-fill"></i> Appeler</a>
+      <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="mobile-btn wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    </div>
+  </aside>
 
   <script src="js/script.js"></script>
 </body>

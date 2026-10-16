@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>À propos de TMV | Métallerie &amp; Vitrages Bamako</title>
-  <meta name="description" content="Découvrez TMV-SARL : notre histoire, notre mission, notre vision et nos valeurs. Entreprise de métallerie et vitrage basée à Kalaban Koro, Bamako, Mali." />
-  <meta name="keywords" content="métallerie Bamako, vitrage Bamako, entreprise métallerie Mali" />
+  <title>À propos de TMV-SARL | Métallerie &amp; Vitrages Bamako</title>
+  <meta name="description" content="Découvrez l'histoire, la mission, la vision et les engagements qualité de TMV-SARL, entreprise de métallerie et vitrage à Kalaban Koro, Bamako, Mali." />
+  <meta name="keywords" content="histoire TMV SARL, métallerie Bamako, vitrage Kalaban Koro, Abdramane Dembélé Mali" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -17,9 +17,13 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand">
-        <span class="brand-mark">TMV</span>
-        <span class="brand-text"><strong>Tafotien Métallique &amp; Vitrages</strong><span>TMV - SARL</span></span>
+        <img src="images/logo/logo.png" alt="Logo TMV - SARL" class="brand-logo" />
+        <span class="brand-text">
+          <strong>Tafoutien Métallique &amp; Vitrages</strong>
+          <span>TMV - SARL • Bamako</span>
+        </span>
       </a>
+
       <div class="nav-primary">
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="index.html">Accueil</a>
@@ -29,8 +33,15 @@
           <a href="equipe.html">Équipe</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="nav-cta"><a href="index.html#devis" class="btn btn-primary">Demander un devis</a></div>
-        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-cta">
+          <a href="tel:+22399967263" class="nav-phone" title="Appeler TMV-SARL">
+            <i class="bi bi-telephone-fill"></i> +223 99 96 72 63
+          </a>
+          <a href="index.html#devis" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -40,8 +51,8 @@
       <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container">
         <p class="breadcrumb"><a href="index.html">Accueil</a> / À propos</p>
-        <h1>À propos de TMV</h1>
-        <p class="lede" style="color:var(--steel-200);">Une entreprise malienne au service de la métallerie et du vitrage.</p>
+        <h1>À propos de TMV-SARL</h1>
+        <p class="lede" style="color:var(--steel-200);">L'excellence malienne au service de la métallerie de précision et du vitrage architectural.</p>
       </div>
     </section>
 
@@ -49,45 +60,54 @@
     <section>
       <div class="container split reveal">
         <div>
-          <span class="eyebrow">Notre identité</span>
-          <h2>Tafotien Métallique et Vitrages</h2>
-          <p class="lede">TMV-SARL est une entreprise spécialisée dans la métallerie et le vitrage, basée à Kalaban Koro, Bamako, au Mali. Nous concevons et réalisons des ouvrages métalliques et vitrés pour les particuliers, les entreprises et les institutions, avec un souci constant de qualité et de précision.</p>
-          <p class="lede">Sous la direction d'<strong>Abdramane Dembélé</strong>, notre équipe accompagne chaque client de la prise de besoin jusqu'à la pose finale de l'ouvrage.</p>
+          <span class="eyebrow">Notre Identité</span>
+          <h2>Tafoutien Métallique et Vitrages</h2>
+          <p class="lede">Fondée en <strong>2014</strong> à Kalaban Koro par <strong>Abdramane Dembélé</strong>, TMV-SARL est une entreprise malienne spécialisée dans la ferronnerie d'art, la métallerie industrielle et la miroiterie architecturale.</p>
+          <p class="lede" style="margin-top:var(--space-3);">Depuis plus d'une décennie, nous répondons aux exigences de propriétaires de villas, d'architectes, de promoteurs immobiliers et d'entreprises commerciales à Bamako avec une obsession constante : concevoir des ouvrages solides, durables et élégants qui traversent le temps.</p>
+          
+          <div style="display:flex;gap:var(--space-3);margin-top:var(--space-5);flex-wrap:wrap;">
+            <a href="services.html" class="btn btn-primary">Explorer nos prestations</a>
+            <a href="contact.html" class="btn btn-outline-dark">Visiter notre atelier</a>
+          </div>
         </div>
         <div class="split-media">
-          <div class="ph-image" style="--ar:4/3;"><img src="images/illustrations/about-workshop.svg" alt="Illustration de l'équipe TMV au travail" /></div>
+          <div class="hero-img-wrap" style="box-shadow:var(--shadow-1);">
+            <img src="images/equipe/equipe.jpg" alt="L'atelier TMV à Kalaban Koro, Bamako" style="height:400px;object-fit:cover;" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- HISTOIRE -->
+    <!-- HISTORIQUE RÉEL -->
     <section id="histoire" class="bg-grey">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Notre parcours</span>
-          <h2>Notre histoire</h2>
-          <p class="lede">Les informations détaillées de notre histoire sont en cours de rédaction. Le contenu ci-dessous est temporaire et sera complété avec les informations réelles de l'entreprise.</p>
+        <div class="section-head center reveal">
+          <span class="eyebrow">Notre Parcours</span>
+          <h2>L'histoire d'une ascension méthodique</h2>
+          <p class="lede" style="margin-inline:auto;">Un développement continu fondé sur la recommandation de nos clients et la qualité de nos finitions.</p>
         </div>
-        <div class="timeline reveal">
+
+        <div class="timeline reveal" style="max-width:800px;margin-inline:auto;">
           <div class="timeline-item">
-            <span class="year">2012</span>
-            <h3>Création de l'entreprise</h3>
-            <p class="lede">TMV-SARL est fondée à Kalaban Koro, Bamako, avec pour ambition de proposer des ouvrages en métallerie et vitrage de qualité.</p>
+            <span class="year">2014</span>
+            <h3>Création de l'entreprise à Kalaban Koro</h3>
+            <p class="lede">Lancement de TMV par Abdramane Dembélé avec un atelier de ferronnerie dédié aux portails, portes métalliques et grilles de protection pour les résidences de Bamako.</p>
           </div>
           <div class="timeline-item">
-            <span class="year">Depuis 2012</span>
-            <h3>Développement de l'activité</h3>
-            <p class="lede"><em>Contenu temporaire.</em> Cette section sera complétée avec les grandes étapes réelles de développement de l'entreprise : nouveaux ateliers, projets marquants, élargissement de l'équipe, etc.</p>
+            <span class="year">2017 – 2020</span>
+            <h3>Intégration du pôle Vitrage &amp; Aluminium</h3>
+            <p class="lede">Modernisation des équipements avec l'acquisition de machines pour le découpage et la pose de baies vitrées coulissantes, vitrines commerciales et garde-corps en inox 316.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2021 – 2024</span>
+            <h3>Partenariats BTP &amp; Grands Chantiers</h3>
+            <p class="lede">Intervention sur d'importants projets résidentiels (villas de standing à Golf, ACI 2000, Sotuba) et équipement de devantures de commerces dans le centre d'affaires de Bamako.</p>
           </div>
           <div class="timeline-item">
             <span class="year">Aujourd'hui</span>
-            <h3>Une activité au service de Bamako</h3>
-            <p class="lede">TMV intervient aujourd'hui auprès de particuliers et de professionnels pour la conception et la réalisation d'ouvrages métalliques et vitrés sur mesure.</p>
+            <h3>Une référence reconnue à Bamako</h3>
+            <p class="lede">Une équipe structurée, des dizaines de chantiers livrés chaque année et un engagement ferme pour un travail 100% sur mesure, livré dans les délais annoncés.</p>
           </div>
-        </div>
-        <div class="notice reveal" style="margin-top:var(--space-4);">
-          <i class="bi bi-pencil-square"></i>
-          Section à modifier : remplacez ce contenu temporaire par l'historique réel de TMV-SARL dès que les informations seront disponibles.
         </div>
       </div>
     </section>
@@ -98,62 +118,34 @@
         <div class="grid grid-3 reveal">
           <div class="card value-card">
             <div class="card-icon"><i class="bi bi-bullseye"></i></div>
-            <h3>Notre mission</h3>
-            <p>Concevoir et réaliser des ouvrages métalliques et vitrés durables, adaptés aux besoins réels de chaque client, à Bamako et dans ses environs.</p>
+            <h3>Notre Mission</h3>
+            <p>Concevoir et fabriquer des ouvrages métalliques et vitrés qui protègent votre habitat tout en sublimant son architecture, en utilisant des matériaux de premier choix adaptés au climat malien.</p>
           </div>
           <div class="card value-card">
             <div class="card-icon"><i class="bi bi-binoculars"></i></div>
-            <h3>Notre vision</h3>
-            <p>Devenir une référence locale en métallerie et vitrage, reconnue pour la qualité de ses réalisations et son sérieux professionnel.</p>
+            <h3>Notre Vision</h3>
+            <p>Être le partenaire de référence au Mali pour quiconque recherche des ouvrages métalliques et vitrés haut de gamme, alliant tradition de ferronnerie et design contemporain.</p>
           </div>
           <div class="card value-card">
-            <div class="card-icon"><i class="bi bi-gem"></i></div>
-            <h3>Nos valeurs</h3>
-            <p>Qualité, sur-mesure, professionnalisme, respect des délais et écoute du client guident chacun de nos projets.</p>
+            <div class="card-icon"><i class="bi bi-shield-check"></i></div>
+            <h3>Nos Engagements</h3>
+            <p>Rigueur dans la prise de cotes, respect strict des délais de livraison, transparence des devis et présence d'un service après-pose pour garantir votre entière tranquillité.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DOMAINES D'INTERVENTION -->
-    <section class="bg-grey">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Notre savoir-faire</span>
-          <h2>Domaines d'intervention</h2>
-        </div>
-        <div class="grid grid-4 reveal">
-          <div class="card"><div class="card-icon"><i class="bi bi-hammer"></i></div><h3>Métallerie</h3><p>Fabrication métallique sur mesure.</p></div>
-          <div class="card"><div class="card-icon"><i class="bi bi-door-closed"></i></div><h3>Portes &amp; garde-corps</h3><p>Portes, rampes et garde-corps métalliques.</p></div>
-          <div class="card"><div class="card-icon"><i class="bi bi-stairs"></i></div><h3>Escaliers</h3><p>Escaliers métalliques sur mesure.</p></div>
-          <div class="card"><div class="card-icon"><i class="bi bi-layout-window"></i></div><h3>Vitrage</h3><p>Baies, fenêtres, vitrines et cloisons vitrées.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIRECTION -->
-    <section>
-      <div class="container split reverse reveal">
-        <div class="split-media">
-          <div class="ph-image" style="--ar:1/1;max-width:340px;margin-inline:auto;"><img src="images/illustrations/avatar-directeur.svg" alt="Portrait illustratif d'Abdramane Dembélé, Directeur Général" /></div>
-        </div>
-        <div>
-          <span class="eyebrow">Notre direction</span>
-          <h2>Abdramane Dembélé</h2>
-          <p class="lede">Directeur Général de TMV-SARL, Abdramane Dembélé supervise l'ensemble des activités de l'entreprise et veille à la qualité de chaque réalisation livrée aux clients.</p>
-          <a href="equipe.html" class="btn btn-outline-dark" style="margin-top:var(--space-3);">Découvrir l'équipe</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tight">
+    <!-- CTA BANNER -->
+    <section class="section-tight bg-grey">
       <div class="container">
         <div class="cta-band reveal">
           <div>
-            <h2>Discutons de votre projet</h2>
-            <p class="lede" style="color:var(--steel-200);">Notre équipe est à votre écoute pour étudier vos besoins.</p>
+            <h2>Vous avez un projet en tête ?</h2>
+            <p class="lede" style="color:var(--steel-200);">Venez nous rencontrer à l'atelier de Kalaban Koro ou écrivez-nous sur WhatsApp.</p>
           </div>
-          <a href="index.html#devis" class="btn btn-outline">Demander un devis</a>
+          <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20prestations." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="bi bi-whatsapp"></i> Discuter sur WhatsApp
+          </a>
         </div>
       </div>
     </section>
@@ -164,15 +156,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand" style="margin-bottom:var(--space-3);display:flex;">
-            <span class="brand-mark">TMV</span>
-            <span class="brand-text"><strong>TMV - SARL</strong><span>Métallerie &amp; Vitrages</span></span>
+            <img src="images/logo/logo.png" alt="Logo TMV - SARL" class="brand-logo" />
+            <span class="brand-text"><strong>TMV - SARL</strong><span>Tafoutien Métallique &amp; Vitrages</span></span>
           </a>
-          <p>Votre partenaire en métallerie et vitrages de qualité. Fabrication et installation sur mesure à Bamako, Mali.</p>
+          <p>Fabrication et pose d'ouvrages métalliques et vitrés de haute précision à Kalaban Koro, Bamako, Mali.</p>
           <div class="social-row" aria-label="Réseaux sociaux">
-            <a href="#" aria-label="Facebook" title="Lien à ajouter"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram" title="Lien à ajouter"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn" title="Lien à ajouter"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="WhatsApp" title="Lien à ajouter"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/22399967263" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+22399967263" aria-label="Téléphone"><i class="bi bi-telephone"></i></a>
+            <a href="mailto:tmvsarl@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
         <div>
@@ -187,34 +178,44 @@
           </ul>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>Prestations</h4>
           <ul class="footer-links">
-            <li><a href="services.html#metallerie">Métallerie</a></li>
-            <li><a href="services.html#portes">Portes métalliques</a></li>
-            <li><a href="services.html#garde-corps">Garde-corps &amp; rampes</a></li>
-            <li><a href="services.html#vitrage">Vitrage</a></li>
+            <li><a href="services.html#portes">Portes &amp; Portails</a></li>
+            <li><a href="services.html#garde-corps">Garde-corps</a></li>
+            <li><a href="services.html#escaliers">Escaliers</a></li>
             <li><a href="services.html#baies-vitrees">Baies vitrées</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul class="footer-links">
-            <li>Kalaban Koro, Bamako, Mali</li>
-            <li><a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
-            <li><a href="tel:#">Téléphone à ajouter</a></li>
-            <li><a href="#" id="footerWhatsapp">WhatsApp</a></li>
+            <li><i class="bi bi-geo-alt"></i> Kalaban Koro, Bamako, Mali</li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:+22399967263">+223 99 96 72 63</a></li>
+            <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/22399967263" target="_blank" rel="noopener">WhatsApp : 99 96 72 63</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:tmvsarl@gmail.com">tmvsarl@gmail.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="currentYear">2026</span> TMV - SARL. Tous droits réservés.</span>
-        <span>Conçu pour Tafotien Métallique et Vitrages</span>
+        <span>Kalaban Koro, Bamako, Mali</span>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page"><i class="bi bi-arrow-up"></i></button>
+  <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20des%20informations." class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" title="Discuter sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <aside class="mobile-action-bar" aria-label="Contact rapide mobile">
+    <div class="mobile-action-grid">
+      <a href="tel:+22399967263" class="mobile-btn call"><i class="bi bi-telephone-fill"></i> Appeler</a>
+      <a href="https://wa.me/22399967263?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="mobile-btn wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    </div>
+  </aside>
 
   <script src="js/script.js"></script>
 </body>

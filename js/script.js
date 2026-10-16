@@ -6,23 +6,24 @@
    ========================================================================= */
 
 /* -------------------------------------------------------------------------
-   CONFIGURATION — à modifier facilement
+   CONFIGURATION — TMV SARL Bamako
    ------------------------------------------------------------------------- */
-// Numéro WhatsApp de l'entreprise au format international, SANS "+" ni espaces.
-// Exemple : "22370000000". Remplacer par le vrai numéro avant mise en ligne.
-const whatsappNumber = "NUMERO_A_AJOUTER";
+// Numéro WhatsApp officiel de l'entreprise : +223 99 96 72 63
+const whatsappNumber = "22399967263";
 
-// Adresse email de contact (déjà fournie par l'entreprise)
+// Adresse email de contact officielle
 const contactEmail = "tmvsarl@gmail.com";
 
 document.addEventListener("DOMContentLoaded", function () {
   initHeader();
   initMobileMenu();
   initScrollReveal();
+  initCounters();
   initGalleryFilter();
   initGalleryModal();
   initContactForm();
   initDevisForm();
+  initWhatsappTriggers();
   initWhatsappFloat();
   initBackToTop();
   initFooterYear();
@@ -149,11 +150,33 @@ function initGalleryModal() {
     if (!item) return;
     const title = item.getAttribute("data-title") || "Réalisation TMV";
     const category = item.getAttribute("data-category-label") || "";
-    const imageSrc = item.getAttribute("data-image") || "";
+    const imgEl = item.querySelector("img");
+    let imageSrc = item.getAttribute("data-image") || "";
+    // Priorité à la vraie photo si l'attribut pointe vers un vieux SVG
+    if (!imageSrc || imageSrc.includes(".svg")) {
+      if (imgEl && imgEl.getAttribute("src")) {
+        imageSrc = imgEl.getAttribute("src");
+      }
+    }
     modalTitle.textContent = title;
     modalCategory.textContent = category;
     if (imageSrc) modalImage.setAttribute("src", imageSrc);
     modalImage.setAttribute("alt", title);
+
+    // Mise à jour du bouton d'action dans la modal si présent
+    let modalAction = backdrop.querySelector(".modal-wa-btn");
+    if (!modalAction) {
+      modalAction = document.createElement("a");
+      modalAction.className = "btn btn-whatsapp modal-wa-btn";
+      modalAction.style.marginTop = "0.75rem";
+      modalAction.style.display = "inline-flex";
+      modalAction.innerHTML = '<i class="bi bi-whatsapp"></i> Commander un projet similaire';
+      backdrop.querySelector(".modal-info").appendChild(modalAction);
+    }
+    modalAction.onclick = function (e) {
+      e.preventDefault();
+      openWhatsapp("Bonjour TMV, j'ai vu votre réalisation « " + title + " » (" + category + ") sur votre site web et je souhaite commander un projet similaire.");
+    };
   }
 
   function closeModal() {
@@ -198,6 +221,65 @@ function initGalleryModal() {
   }
   if (nextBtn) nextBtn.addEventListener("click", nextImage);
   if (prevBtn) prevBtn.addEventListener("click", prevImage);
+}
+
+/* -------------------------------------------------------------------------
+   ANIMATION DES COMPTEURS CHIFFRES CLÉS
+   ------------------------------------------------------------------------- */
+function initCounters() {
+  const counters = document.querySelectorAll("[data-counter]");
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute("data-counter"), 10);
+        const prefix = el.getAttribute("data-prefix") || "";
+        const suffix = el.getAttribute("data-suffix") || "";
+        const duration = 1600;
+        const start = performance.now();
+
+        function update(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out expo
+          const current = Math.floor(progress === 1 ? target : target * (1 - Math.pow(2, -10 * progress)));
+          el.textContent = prefix + current + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            el.textContent = prefix + target + suffix;
+          }
+        }
+        requestAnimationFrame(update);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  counters.forEach(function (el) { observer.observe(el); });
+}
+
+/* -------------------------------------------------------------------------
+   DÉCLENCHEURS WHATSAPP DYNAMIQUES
+   ------------------------------------------------------------------------- */
+function initWhatsappTriggers() {
+  document.querySelectorAll("[data-wa-service]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const service = btn.getAttribute("data-wa-service");
+      openWhatsapp("Bonjour TMV-SARL, je souhaite demander des informations et un devis pour votre service : " + service + ".");
+    });
+  });
+
+  document.querySelectorAll("[data-wa-custom]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const msg = btn.getAttribute("data-wa-custom");
+      openWhatsapp(msg);
+    });
+  });
 }
 
 /* -------------------------------------------------------------------------
