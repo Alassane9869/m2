@@ -1480,3 +1480,426 @@ section { padding-block: var(--space-7); position: relative; }
     bottom: calc(var(--space-3) + 112px);
   }
 }
+
+/* =========================================================================
+   PAGE BANNERS & CORPORATE SUBPAGES (À PROPOS & ÉQUIPE)
+   ========================================================================= */
+.page-banner {
+  position: relative;
+  background: linear-gradient(135deg, #072742 0%, #0B466E 45%, #0E6FA6 100%);
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+  color: var(--white);
+  overflow: hidden;
+  border-bottom: 3px solid rgba(56, 189, 248, 0.3);
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+
+.page-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #7DD3FC;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+  backdrop-filter: blur(4px);
+}
+
+.page-banner h1 {
+  color: var(--white);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: var(--space-2);
+  line-height: 1.15;
+}
+
+.page-banner .lede {
+  color: #E0F2FE;
+  max-width: 680px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #93C5FD;
+  margin-bottom: var(--space-3);
+}
+.breadcrumb a {
+  color: #BAE6FD;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumb a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+.breadcrumb span.current {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Grille de stats d'entreprise (4 cartes) */
+.stat-grid-corporate {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+.stat-card-corporate {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-top: 4px solid var(--tmv-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card-corporate:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-top-color: #38BDF8;
+}
+.stat-card-corporate .stat-num {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 700;
+  color: var(--tmv-primary-dark);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-card-corporate strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.stat-card-corporate p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Timeline corporate */
+.timeline-corporate {
+  position: relative;
+  max-width: 840px;
+  margin: var(--space-6) auto 0;
+  padding-left: 32px;
+}
+.timeline-corporate::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 8px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--tmv-primary) 0%, #38BDF8 100%);
+  border-radius: 2px;
+}
+.timeline-node {
+  position: relative;
+  margin-bottom: var(--space-5);
+}
+.timeline-node:last-child {
+  margin-bottom: 0;
+}
+.timeline-node::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 4px solid var(--tmv-primary);
+  box-shadow: 0 0 0 3px rgba(14, 111, 166, 0.25);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.timeline-node:hover::before {
+  transform: scale(1.2);
+  border-color: #38BDF8;
+}
+.timeline-card {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.timeline-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--tmv-primary);
+}
+.timeline-date-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--tmv-sky-soft);
+  color: var(--tmv-primary-dark);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.timeline-card h3 {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+.timeline-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Carte de la Direction (DG Executive Profile) */
+.executive-profile {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  align-items: stretch;
+}
+.executive-media {
+  position: relative;
+  background: #072742;
+  overflow: hidden;
+}
+.executive-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.executive-badge-float {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(7, 39, 66, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  color: var(--white);
+  backdrop-filter: blur(8px);
+}
+.executive-badge-float strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--white);
+}
+.executive-badge-float span {
+  font-size: 0.75rem;
+  color: #38BDF8;
+  font-weight: 600;
+}
+.executive-content {
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.executive-quote {
+  position: relative;
+  padding: var(--space-3) var(--space-4);
+  background: var(--tmv-sky-soft);
+  border-left: 4px solid var(--tmv-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-block: var(--space-4);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--tmv-primary-dark);
+  line-height: 1.6;
+}
+.executive-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-block: var(--space-4);
+  border-top: 1px solid var(--grey-200);
+  padding-top: var(--space-3);
+}
+.pillar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pillar-item strong {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+}
+.pillar-item span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Pôles d'expertise & Skill Pills */
+.pole-card {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.pole-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--tmv-primary);
+}
+.pole-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: var(--tmv-sky-soft);
+  color: var(--tmv-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-3);
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: var(--space-4);
+}
+.skill-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--tmv-primary-dark);
+  background: #EAF4FB;
+  border: 1px solid #C8E3F5;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+/* Workshop Showcase Panoramic */
+.workshop-showcase-card {
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: var(--space-6);
+}
+.workshop-showcase-img {
+  position: relative;
+  background: #072742;
+}
+.workshop-showcase-img img {
+  width: 100%;
+  height: clamp(300px, 40vw, 480px);
+  object-fit: cover;
+  display: block;
+}
+.workshop-showcase-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--white);
+  border-top: 1px solid var(--grey-200);
+}
+.workshop-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+/* Manifesto Box */
+.manifesto-box {
+  background: linear-gradient(135deg, #072742 0%, #0E6FA6 100%);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.manifesto-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+.manifesto-box h2 {
+  color: var(--white);
+  margin-bottom: var(--space-3);
+}
+.manifesto-box p {
+  color: #E0F2FE;
+  line-height: 1.7;
+}
+
+/* =========================================================================
+   MEDIA QUERIES FOR CORPORATE SUBPAGES
+   ========================================================================= */
+@media (max-width: 992px) {
+  .stat-grid-corporate { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .executive-profile { grid-template-columns: 1fr; }
+  .executive-media img { height: 380px; min-height: unset; }
+  .executive-pillars { grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+}
+
+@media (max-width: 768px) {
+  .stat-grid-corporate { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat-card-corporate { padding: 12px; }
+  .stat-card-corporate .stat-num { font-size: 1.6rem; }
+  .stat-card-corporate strong { font-size: 0.85rem; }
+  .stat-card-corporate p { font-size: 0.72rem; }
+  .timeline-corporate { padding-left: 20px; }
+  .timeline-corporate::before { left: 4px; }
+  .timeline-node::before { left: -22px; width: 14px; height: 14px; top: 12px; }
+  .timeline-card { padding: 14px 16px; }
+  .executive-pillars { grid-template-columns: 1fr; }
+  .workshop-showcase-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
