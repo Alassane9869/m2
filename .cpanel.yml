@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/vuxe6870/tmv-sarl.danayaplus.com/
+    - export DEPLOYPATH=/home/vuxe8870/tmv-sarl.danayaplus.com/
     - /bin/rsync -av --exclude='.git*' ./ $DEPLOYPATH
+    - chmod 755 $DEPLOYPATH
+    - find $DEPLOYPATH -type d -exec chmod 755 {} +
+    - find $DEPLOYPATH -type f -exec chmod 644 {} +
