@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vuxe6870/tmv-sarl.danayaplus.com/
+    - /bin/rsync -av --exclude='.git*' ./ $DEPLOYPATH
