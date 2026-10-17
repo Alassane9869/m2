@@ -11,6 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Tafoutien Métallique & Vitrages (TMV - SARL)",
+    "image": "images/logo/logo.png",
+    "telephone": "+22399967263",
+    "email": "tmvsarl@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kalaban Koro",
+      "addressLocality": "Bamako",
+      "addressCountry": "ML"
+    },
+    "openingHours": "Mo-Sa 08:00-18:30"
+  }
+  </script>
 </head>
 <body>
 
@@ -187,9 +204,14 @@
                 <span class="error-msg">Veuillez rédiger votre message.</span>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block" style="padding:1rem;">
-              <i class="bi bi-send-fill"></i> Envoyer mon message
-            </button>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-top:var(--space-2);">
+              <button type="button" id="btnContactWhatsApp" class="btn btn-whatsapp btn-block" style="padding:1rem;">
+                <i class="bi bi-whatsapp"></i> Envoyer ma demande via WhatsApp
+              </button>
+              <button type="submit" id="btnContactEmail" class="btn btn-outline btn-block" style="padding:0.85rem;font-size:0.9rem;">
+                <i class="bi bi-envelope-fill"></i> Envoyer par Email classique
+              </button>
+            </div>
             <p style="font-size:0.8rem;color:var(--grey-400);text-align:center;margin-top:var(--space-2);">
               Vous pouvez également nous joindre directement au <a href="tel:+22399967263" style="color:var(--accent-cyan);font-weight:600;">+223 99 96 72 63</a>.
             </p>

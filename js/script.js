@@ -357,6 +357,33 @@ function initContactForm() {
   if (!form) return;
   attachLiveValidation(form);
 
+  // Envoi direct via WhatsApp
+  const btnWa = document.getElementById("btnContactWhatsApp");
+  if (btnWa) {
+    btnWa.addEventListener("click", function () {
+      if (!validateForm(form)) return;
+
+      const data = new FormData(form);
+      const nom = data.get("nom") || "";
+      const telephone = data.get("telephone") || "";
+      const email = data.get("email") || "";
+      const service = data.get("service") || "";
+      const message = data.get("message") || "";
+
+      let texte = "Bonjour TMV, je vous contacte depuis votre formulaire de contact :\n\n";
+      texte += "Nom et prénom : " + nom + "\n";
+      texte += "Téléphone : " + telephone + "\n";
+      if (email) texte += "Email : " + email + "\n";
+      texte += "Service concerné : " + service + "\n\n";
+      texte += "Message / Description :\n" + message;
+
+      openWhatsapp(texte);
+      showFormSuccess(form, "Votre message a été préparé pour WhatsApp. Finalisez l'envoi dans la discussion.");
+      form.reset();
+    });
+  }
+
+  // Envoi par email classique
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     if (!validateForm(form)) return;
@@ -381,10 +408,8 @@ function initContactForm() {
       "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
 
-    // Ouvre le logiciel de messagerie de l'utilisateur avec le message pré-rempli
     window.location.href = mailtoLink;
-
-    showFormSuccess(form, "Votre logiciel de messagerie va s'ouvrir avec votre message pré-rempli. Vous pouvez aussi nous écrire directement sur WhatsApp.");
+    showFormSuccess(form, "Votre logiciel de messagerie va s'ouvrir avec votre message pré-rempli. Vous pouvez également nous écrire directement sur WhatsApp.");
     form.reset();
   });
 }
