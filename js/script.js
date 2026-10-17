@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initWhatsappFloat();
   initBackToTop();
   initFooterYear();
+  initFaqAccordion();
 });
 
 /* -------------------------------------------------------------------------
@@ -483,4 +484,34 @@ function initBackToTop() {
 function initFooterYear() {
   const el = document.getElementById("currentYear");
   if (el) el.textContent = new Date().getFullYear();
+}
+
+/* -------------------------------------------------------------------------
+   ACCORDÉON FAQ (Foire Aux Questions)
+   ------------------------------------------------------------------------- */
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll(".faq-item");
+  if (!faqItems.length) return;
+
+  faqItems.forEach(function (item) {
+    const btn = item.querySelector(".faq-question");
+    if (!btn) return;
+
+    btn.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      // Fermer les autres questions pour une lecture fluide (accordéon exclusif)
+      faqItems.forEach(function (other) {
+        if (other !== item) {
+          other.classList.remove("is-open");
+          const otherBtn = other.querySelector(".faq-question");
+          if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      // Basculer l'état de l'élément cliqué
+      item.classList.toggle("is-open", !isOpen);
+      btn.setAttribute("aria-expanded", String(!isOpen));
+    });
+  });
 }
