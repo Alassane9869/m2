@@ -421,7 +421,7 @@ section { padding-block: var(--space-7); position: relative; }
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(7, 39, 66, 0.92) 0%, rgba(11, 70, 110, 0.86) 45%, rgba(7, 39, 66, 0.96) 100%),
+    linear-gradient(135deg, rgba(7, 39, 66, 0.65) 0%, rgba(11, 70, 110, 0.50) 50%, rgba(7, 39, 66, 0.72) 100%),
     url('../images/realisations/portail-villa-luxe-ferronnerie-dore-bamako.jpg') center/cover no-repeat;
   color: var(--white);
   padding-block: var(--space-6) var(--space-7);
@@ -466,9 +466,9 @@ section { padding-block: var(--space-7); position: relative; }
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  background: rgba(7, 39, 66, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   padding: 6px 16px;
   border-radius: var(--radius-full);
   font-size: 0.825rem;
@@ -482,6 +482,7 @@ section { padding-block: var(--space-7); position: relative; }
 
 .hero .eyebrow {
   color: #7DD3FC;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
@@ -492,6 +493,7 @@ section { padding-block: var(--space-7); position: relative; }
   margin-bottom: var(--space-3);
   letter-spacing: -0.025em;
   font-weight: 700;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.8);
 }
 .hero h1 .highlight {
   display: block;
@@ -500,13 +502,15 @@ section { padding-block: var(--space-7); position: relative; }
   font-size: clamp(1.15rem, 2.1vw, 1.55rem);
   letter-spacing: -0.01em;
   margin-top: 6px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 .hero p.lede {
-  color: #E0F2FE;
+  color: #F0F9FF;
   margin-bottom: var(--space-4);
   font-size: 1.05rem;
   line-height: 1.65;
   max-width: 58ch;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
 }
 
 /* Points clés de réassurance dans le hero */
@@ -1461,7 +1465,58 @@ section { padding-block: var(--space-7); position: relative; }
 
   /* Formulaire et footer */
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-4); }
-  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Filtres galerie en carrousel tactile horizontal sans barre de défilement */
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 4px 6px 12px;
+    margin-bottom: var(--space-4);
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Captions de galerie toujours lisibles sur écran tactile mobile */
+  .gallery-item .gallery-caption {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(7, 39, 66, 0.94) 0%, rgba(7, 39, 66, 0.5) 45%, transparent 100%);
+    padding: 10px 12px;
+  }
+  .gallery-caption strong {
+    font-size: 0.88rem;
+    line-height: 1.25;
+  }
+  .gallery-caption span {
+    font-size: 0.7rem;
+  }
+  .gallery-caption .zoom-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+    top: 8px;
+    right: 8px;
+  }
+
+  /* Cartes de service et présentation DG sur mobile */
+  .service-thumb { height: 180px; }
+  .executive-profile { flex-direction: column; }
+  .executive-media img { height: 290px; }
+  .executive-content { padding: 18px 16px; }
+  .executive-pillars { grid-template-columns: 1fr; gap: 10px; }
+  .stat-grid-corporate { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat-card-corporate { padding: 14px 12px; }
+  .stat-card-corporate .stat-num { font-size: 1.8rem; }
   
   /* Bouton flottant WhatsApp */
   .whatsapp-float {
@@ -1486,7 +1541,7 @@ section { padding-block: var(--space-7); position: relative; }
 .page-banner {
   position: relative;
   background: 
-    linear-gradient(135deg, rgba(7, 39, 66, 0.92) 0%, rgba(11, 70, 110, 0.86) 45%, rgba(14, 111, 166, 0.92) 100%),
+    linear-gradient(135deg, rgba(7, 39, 66, 0.65) 0%, rgba(11, 70, 110, 0.50) 50%, rgba(14, 111, 166, 0.68) 100%),
     url('../images/realisations/portail-villa-noir-brillant-or-medaillon.jpg') center/cover no-repeat;
   padding-block: clamp(3.5rem, 6vw, 5.5rem);
   color: var(--white);
@@ -1511,15 +1566,16 @@ section { padding-block: var(--space-7); position: relative; }
   gap: 8px;
   padding: 5px 14px;
   border-radius: 999px;
-  background: rgba(56, 189, 248, 0.15);
-  border: 1px solid rgba(56, 189, 248, 0.4);
+  background: rgba(7, 39, 66, 0.65);
+  border: 1px solid rgba(56, 189, 248, 0.5);
   color: #7DD3FC;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: var(--space-3);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .page-banner h1 {
@@ -1527,13 +1583,15 @@ section { padding-block: var(--space-7); position: relative; }
   font-size: clamp(2rem, 4vw, 3.2rem);
   margin-bottom: var(--space-2);
   line-height: 1.15;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.8);
 }
 
 .page-banner .lede {
-  color: #E0F2FE;
+  color: #F0F9FF;
   max-width: 680px;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
 }
 
 .breadcrumb {
