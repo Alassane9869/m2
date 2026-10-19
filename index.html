@@ -304,24 +304,89 @@
       </div>
     </section>
 
-    <!-- ============ PRÉSENTATION RAPIDE ============ -->
-    <section id="apropos">
-      <div class="container split reveal">
-        <div class="split-media">
-          <div class="hero-showcase" style="border:none;box-shadow:var(--shadow-md);">
-            <img src="images/equipe/equipe.jpg" alt="L'atelier TMV à Kalaban Koro" style="height:360px;" />
-          </div>
-        </div>
-        <div>
-          <span class="eyebrow">Notre Savoir-Faire</span>
-          <h2>Une exigence technique au service de votre habitat</h2>
-          <p class="lede">Implantée à Kalaban Koro, <strong>TMV-SARL</strong> est une entreprise malienne spécialisée dans la ferronnerie d'art, la métallerie industrielle et la vitrerie architecturale.</p>
-          <p class="lede" style="margin-top:var(--space-3);">Sous la conduite d'<strong>Abdramane Dembélé</strong>, nos artisans conçoivent des ouvrages qui combinent haute sécurité, résistance face au climat sahélien et esthétisme contemporain pour particuliers et professionnels.</p>
+    <!-- ============ PRÉSENTATION RAPIDE & SAVOIR-FAIRE ============ -->
+    <section id="apropos" class="about-overview-section">
+      <div class="container">
+        <div class="about-overview-grid reveal">
           
-          <div style="display:flex;gap:var(--space-3);margin-top:var(--space-4);flex-wrap:wrap;">
-            <a href="a-propos.html" class="btn btn-outline-dark">Découvrir notre histoire</a>
-            <a href="realisations.html" class="btn btn-outline">Explorer nos réalisations</a>
+          <!-- Colonne média visuelle avec badges d'autorité -->
+          <div class="about-overview-media">
+            <div class="about-overview-frame">
+              <img src="images/equipe/equipe.jpg" alt="L'atelier de métallerie et vitrage TMV à Kalaban Koro, Bamako" class="about-overview-img" />
+              
+              <!-- Badge flottant d'expérience -->
+              <div class="about-badge-exp">
+                <div class="exp-icon"><i class="bi bi-patch-check-fill"></i></div>
+                <div class="exp-text">
+                  <strong>Depuis 2014</strong>
+                  <span>10+ ans d'artisanat à Bamako</span>
+                </div>
+              </div>
+
+              <!-- Ruban statut d'atelier opérationnel -->
+              <div class="about-badge-workshop">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Atelier Kalaban Koro • Ouvert 6j/7</span>
+              </div>
+            </div>
           </div>
+
+          <!-- Colonne contenu et arguments d'excellence -->
+          <div class="about-overview-content">
+            <span class="eyebrow"><i class="bi bi-shield-check"></i> Notre Savoir-Faire d'Excellence</span>
+            <h2>Une exigence technique au service de votre habitat</h2>
+            <p class="lede">Implantée au cœur de <strong>Kalaban Koro</strong>, <strong>TMV-SARL</strong> est une entreprise malienne de référence spécialisée dans la ferronnerie d'art, la métallerie industrielle et la vitrerie architecturale de prestige.</p>
+            <p class="lede" style="margin-top:var(--space-2);">Sous la conduite d'<strong>Abdramane Dembélé</strong>, nos artisans chevronnés conçoivent des ouvrages combinant haute sécurité, résistance face au climat sahélien et esthétisme contemporain pour les villas et professionnels du Mali.</p>
+            
+            <!-- Grille des 4 atouts maîtres -->
+            <div class="about-strengths-grid">
+              <div class="strength-item">
+                <div class="strength-icon"><i class="bi bi-award-fill"></i></div>
+                <div class="strength-text">
+                  <strong>Aciers Lourds &amp; Inox 316</strong>
+                  <span>Profilés certifiés et matières premières durables</span>
+                </div>
+              </div>
+
+              <div class="strength-item">
+                <div class="strength-icon"><i class="bi bi-rulers"></i></div>
+                <div class="strength-text">
+                  <strong>Précision Millimétrique</strong>
+                  <span>Prise de cotes assistée laser sur votre chantier</span>
+                </div>
+              </div>
+
+              <div class="strength-item">
+                <div class="strength-icon"><i class="bi bi-paint-bucket"></i></div>
+                <div class="strength-text">
+                  <strong>Traitement Anticorrosion</strong>
+                  <span>Primaire antirouille 3 couches adapté à Bamako</span>
+                </div>
+              </div>
+
+              <div class="strength-item">
+                <div class="strength-icon"><i class="bi bi-tools"></i></div>
+                <div class="strength-text">
+                  <strong>Pose &amp; Suivi Garanti</strong>
+                  <span>Scellement chimique haute résistance et SAV réactif</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Boutons d'action modernes et engageants -->
+            <div class="about-overview-actions">
+              <a href="a-propos.html" class="btn btn-primary">
+                Découvrir notre histoire <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="realisations.html" class="btn btn-outline-dark">
+                <i class="bi bi-images"></i> Explorer nos réalisations
+              </a>
+              <a href="https://wa.me/22379299694?text=Bonjour%20TMV,%20je%20souhaite%20visiter%20votre%20atelier%20%C3%A0%20Kalaban%20Koro." target="_blank" rel="noopener" class="btn btn-whatsapp-subtle">
+                <i class="bi bi-whatsapp"></i> Visiter l'atelier
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -444,32 +509,47 @@
     </section>
 
     <!-- ============ PROCESSUS EN 4 ÉTAPES ============ -->
-    <section>
+    <section class="process-section">
       <div class="container">
         <div class="section-head center reveal">
           <span class="eyebrow">Méthode de Travail</span>
           <h2>Comment se déroule votre projet chez TMV ?</h2>
-          <p class="lede" style="margin-inline:auto;">Un processus éprouvé pour garantir le respect de vos cotes, de vos délais et de votre budget.</p>
+          <p class="lede" style="margin-inline:auto;">Un processus éprouvé et transparent pour garantir le respect de vos cotes, de vos délais et de votre budget à Bamako.</p>
         </div>
 
         <div class="process-grid reveal">
           <div class="process-step">
-            <span class="step-num">01</span>
+            <div class="process-step-header">
+              <div class="step-icon"><i class="bi bi-rulers"></i></div>
+              <span class="step-num">01</span>
+            </div>
             <h3>Prise de cotes &amp; Écoute</h3>
             <p>Notre technicien se déplace sur votre chantier à Bamako pour relever les dimensions exactes et vous conseiller techniquement.</p>
           </div>
+
           <div class="process-step">
-            <span class="step-num">02</span>
+            <div class="process-step-header">
+              <div class="step-icon"><i class="bi bi-file-earmark-check"></i></div>
+              <span class="step-num">02</span>
+            </div>
             <h3>Devis clair sous 24h/48h</h3>
             <p>Proposition chiffrée détaillée indiquant les matériaux, les profilés retenus et les délais fermes de fabrication.</p>
           </div>
+
           <div class="process-step">
-            <span class="step-num">03</span>
+            <div class="process-step-header">
+              <div class="step-icon"><i class="bi bi-fire"></i></div>
+              <span class="step-num">03</span>
+            </div>
             <h3>Fabrication en atelier</h3>
             <p>Découpe de précision, soudure soignée et traitement anticorrosion réalisés dans notre atelier de Kalaban Koro.</p>
           </div>
+
           <div class="process-step">
-            <span class="step-num">04</span>
+            <div class="process-step-header">
+              <div class="step-icon"><i class="bi bi-truck"></i></div>
+              <span class="step-num">04</span>
+            </div>
             <h3>Livraison &amp; Pose soignée</h3>
             <p>Acheminement, ancrage sécurisé, vérification des niveaux et finitions assurés par nos propres équipes.</p>
           </div>
@@ -683,16 +763,19 @@
         </div>
 
         <div class="faq-extra-help reveal">
-          <p style="margin:0 0 10px;color:var(--text-dark);font-weight:600;">Une question sur votre projet ou besoin d'un chiffrage immédiat ?</p>
-          <a href="https://wa.me/22379299694?text=Bonjour%20TMV,%20j'ai%20une%20question%20concernant%20mes%20travaux." target="_blank" rel="noopener" class="btn btn-whatsapp" style="display:inline-flex;">
-            <i class="bi bi-whatsapp"></i> Poser votre question sur WhatsApp
+          <div class="faq-extra-help-content">
+            <strong>Une question sur votre projet ou besoin d'un chiffrage immédiat ?</strong>
+            <p>Notre équipe technique vous répond en direct sur WhatsApp avec conseils personnalisés et estimation rapide.</p>
+          </div>
+          <a href="https://wa.me/22379299694?text=Bonjour%20TMV,%20j'ai%20une%20question%20concernant%20mes%20travaux." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="bi bi-whatsapp"></i> Échanger sur WhatsApp
           </a>
         </div>
       </div>
     </section>
 
     <!-- ============ DEMANDE DE DEVIS WHATSAPP ============ -->
-    <section id="devis">
+    <section id="devis" class="bg-soft">
       <div class="container">
         <div class="grid grid-2 reveal" style="align-items:flex-start;gap:var(--space-6);">
           <div>
@@ -890,13 +973,33 @@
     <i class="bi bi-arrow-up"></i>
   </button>
 
-  <!-- Barre d'action mobile -->
-  <aside class="mobile-action-bar" aria-label="Contact rapide mobile">
-    <div class="mobile-action-grid">
-      <a href="tel:+22379299694" class="mobile-btn call"><i class="bi bi-telephone-fill"></i> Appeler</a>
-      <a href="https://wa.me/22379299694?text=Bonjour%20TMV,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener" class="mobile-btn wa"><i class="bi bi-whatsapp"></i> WhatsApp Devis</a>
+  <!-- ============ BARRE DE NAVIGATION MOBILE APPLE ============ -->
+  <nav class="apple-tab-bar" aria-label="Navigation mobile principale">
+    <div class="apple-tab-nav">
+      <a href="index.html" class="apple-tab-item active" aria-current="page">
+        <i class="bi bi-house-door-fill apple-tab-icon"></i>
+        <span class="apple-tab-label">Accueil</span>
+      </a>
+      <a href="services.html" class="apple-tab-item">
+        <i class="bi bi-tools apple-tab-icon"></i>
+        <span class="apple-tab-label">Services</span>
+      </a>
+      <a href="#devis" class="apple-tab-item tab-highlight" title="Demander une estimation">
+        <div class="tab-highlight-bubble">
+          <i class="bi bi-file-earmark-text-fill"></i>
+        </div>
+        <span class="apple-tab-label">Devis</span>
+      </a>
+      <a href="realisations.html" class="apple-tab-item">
+        <i class="bi bi-images apple-tab-icon"></i>
+        <span class="apple-tab-label">Projets</span>
+      </a>
+      <a href="https://wa.me/22379299694?text=Bonjour%20TMV,%20je%20souhaite%20des%20informations." target="_blank" rel="noopener" class="apple-tab-item tab-whatsapp" title="Discuter sur WhatsApp">
+        <i class="bi bi-whatsapp apple-tab-icon"></i>
+        <span class="apple-tab-label">WhatsApp</span>
+      </a>
     </div>
-  </aside>
+  </nav>
 
   <script src="js/script.js"></script>
 </body>
