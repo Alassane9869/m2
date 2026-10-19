@@ -190,6 +190,114 @@ section { padding-block: var(--space-7); position: relative; }
 .split.reverse .split-media { order: 2; }
 
 /* -------------------------------------------------------------------------
+   CADRES MÉDIA ARCHITECTURAUX POUR SERVICES (Harmonisation des Formats)
+   ------------------------------------------------------------------------- */
+.split-media {
+  width: 100%;
+}
+
+.service-media-frame {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--grey-100);
+  border: 1px solid var(--grey-200);
+  box-shadow: 0 10px 28px -4px rgba(10, 28, 46, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-media-frame:hover {
+  box-shadow: 0 16px 36px -4px rgba(14, 111, 166, 0.16);
+  transform: translateY(-2px);
+}
+
+/* Image unique pleine largeur (format paysage) */
+.service-media-single {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.service-media-single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.service-media-single:hover img {
+  transform: scale(1.03);
+}
+
+/* Vitrine double (format portrait côte-à-côte pour préserver 100% du travail) */
+.service-media-dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #0A1C2E 0%, #15324C 100%);
+}
+.service-media-dual .dual-card {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  background: #061524;
+}
+.service-media-dual .dual-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.service-media-dual:hover .dual-card img {
+  transform: scale(1.04);
+}
+.dual-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px 6px;
+  background: linear-gradient(to top, rgba(10, 28, 46, 0.92) 0%, rgba(10, 28, 46, 0.4) 60%, transparent 100%);
+  color: #FFFFFF;
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Badge architectural flottant */
+.service-media-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(10, 28, 46, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.02em;
+}
+.service-media-badge i {
+  color: var(--tmv-sky);
+  font-size: 0.78rem;
+}
+
+/* -------------------------------------------------------------------------
    5. TOP BAR & HEADER (Rendu Corporate / BTP Professionnel)
    ------------------------------------------------------------------------- */
 .top-bar {
@@ -815,29 +923,35 @@ section { padding-block: var(--space-7); position: relative; }
 
 .about-overview-grid {
   display: grid;
-  grid-template-columns: 1fr 1.18fr;
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: center;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: stretch;
 }
 
 /* Cadre média et badges */
 .about-overview-media {
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-overview-frame {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 20px 48px rgba(7, 39, 66, 0.14);
-  border: 1px solid #E2E8F0;
+  box-shadow: 0 20px 48px -8px rgba(7, 39, 66, 0.18);
+  border: 1px solid rgba(14, 111, 166, 0.15);
   background: #072742;
+  height: 100%;
+  min-height: 480px;
 }
 
 .about-overview-img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -863,6 +977,7 @@ section { padding-block: var(--space-7); position: relative; }
   gap: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   animation: floatSubtle 4s ease-in-out infinite;
+  z-index: 2;
 }
 
 @keyframes floatSubtle {
@@ -895,19 +1010,40 @@ section { padding-block: var(--space-7); position: relative; }
   bottom: 16px;
   left: 16px;
   right: 16px;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(226, 232, 240, 0.9);
   border-radius: var(--radius-sm);
-  padding: 10px 14px;
+  padding: 9px 14px;
   color: var(--text-dark);
   font-size: 0.82rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(7, 39, 66, 0.1);
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(7, 39, 66, 0.12);
+  z-index: 2;
+}
+
+.badge-workshop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #15803D;
+  color: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.badge-workshop-link:hover {
+  background: #166534;
+  transform: translateY(-1px);
 }
 
 .about-badge-workshop i {
@@ -916,11 +1052,17 @@ section { padding-block: var(--space-7); position: relative; }
 }
 
 /* Colonne de contenu */
+.about-overview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .about-overview-content h2 {
   font-size: clamp(1.65rem, 3.2vw, 2.35rem);
   line-height: 1.25;
   color: var(--text-dark);
-  margin-block: 0.5rem 1rem;
+  margin-block: 0.6rem 1rem;
   letter-spacing: -0.02em;
 }
 
@@ -935,25 +1077,33 @@ section { padding-block: var(--space-7); position: relative; }
 .about-strengths-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 16px;
-  margin-block: 1.5rem;
-  padding: 1.2rem;
-  background: #F8FAFC;
-  border: 1px solid #E2E8F0;
-  border-radius: var(--radius-md);
+  gap: 12px;
+  margin-block: 1.35rem;
 }
 
 .strength-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
+  padding: 13px 15px;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(10, 28, 46, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.strength-item:hover {
+  border-color: var(--tmv-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(14, 111, 166, 0.10);
 }
 
 .strength-icon {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  background: #E0F2FE;
+  background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%);
   color: var(--tmv-primary);
   display: flex;
   align-items: center;
@@ -964,9 +1114,8 @@ section { padding-block: var(--space-7); position: relative; }
 }
 
 .strength-item:hover .strength-icon {
-  background: var(--tmv-primary);
+  background: linear-gradient(135deg, var(--tmv-primary) 0%, #073B61 100%);
   color: var(--white);
-  transform: scale(1.08);
 }
 
 .strength-text strong {
@@ -988,9 +1137,9 @@ section { padding-block: var(--space-7); position: relative; }
 .about-overview-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: 12px;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .btn-whatsapp-subtle {
@@ -1893,8 +2042,10 @@ section { padding-block: var(--space-7); position: relative; }
     border-top: 2px dashed var(--grey-200);
   }
 
-  .split, .split.reverse { grid-template-columns: 1fr; }
+  .split, .split.reverse { grid-template-columns: 1fr; gap: var(--space-4); }
   .split.reverse .split-media { order: 0; }
+  .service-media-frame { height: 280px; }
+  .service-media-dual { gap: 8px; padding: 8px; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
