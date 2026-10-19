@@ -2561,6 +2561,7 @@ section { padding-block: var(--space-7); position: relative; }
   .executive-profile { grid-template-columns: 1fr; }
   .executive-media img { height: 380px; min-height: unset; }
   .executive-pillars { grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  .quality-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
 }
 
 @media (max-width: 768px) {
@@ -2575,6 +2576,40 @@ section { padding-block: var(--space-7); position: relative; }
   .timeline-card { padding: 14px 16px; }
   .executive-pillars { grid-template-columns: 1fr; }
   .workshop-showcase-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Charte qualité en 1 colonne ultra fluide sur mobile */
+  .quality-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .value-card {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    padding: 1.15rem 1.1rem !important;
+    border-top: 1px solid #E2E8F0 !important;
+    border-left: 4px solid var(--tmv-primary) !important;
+    border-radius: 14px !important;
+  }
+  .value-card .card-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  .value-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .value-card h3 {
+    font-size: 1.05rem !important;
+    margin-bottom: 4px !important;
+  }
+  .value-card p {
+    font-size: 0.84rem !important;
+    line-height: 1.5 !important;
+  }
 }
 
 /* =========================================================================
