@@ -421,9 +421,8 @@ section { padding-block: var(--space-7); position: relative; }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.28) 0%, transparent 55%),
-    radial-gradient(circle at 15% 85%, rgba(14, 111, 166, 0.35) 0%, transparent 60%),
-    linear-gradient(135deg, #072742 0%, #0B466E 40%, #0E6FA6 100%);
+    linear-gradient(135deg, rgba(7, 39, 66, 0.92) 0%, rgba(11, 70, 110, 0.86) 45%, rgba(7, 39, 66, 0.96) 100%),
+    url('../images/realisations/portail-villa-luxe-ferronnerie-dore-bamako.jpg') center/cover no-repeat;
   color: var(--white);
   padding-block: var(--space-6) var(--space-7);
   border-bottom: 2px solid #09375C;
@@ -1486,7 +1485,9 @@ section { padding-block: var(--space-7); position: relative; }
    ========================================================================= */
 .page-banner {
   position: relative;
-  background: linear-gradient(135deg, #072742 0%, #0B466E 45%, #0E6FA6 100%);
+  background: 
+    linear-gradient(135deg, rgba(7, 39, 66, 0.92) 0%, rgba(11, 70, 110, 0.86) 45%, rgba(14, 111, 166, 0.92) 100%),
+    url('../images/realisations/portail-villa-noir-brillant-or-medaillon.jpg') center/cover no-repeat;
   padding-block: clamp(3.5rem, 6vw, 5.5rem);
   color: var(--white);
   overflow: hidden;

@@ -1,4 +1,4 @@
-/* =========================================================================
+﻿/* =========================================================================
    TMV - SARL | script.js
    Fonctionnalités : menu mobile, header sticky, révélation au défilement,
    filtre galerie, modal images, validation formulaires, génération de
@@ -8,8 +8,8 @@
 /* -------------------------------------------------------------------------
    CONFIGURATION — TMV SARL Bamako
    ------------------------------------------------------------------------- */
-// Numéro WhatsApp officiel de l'entreprise : +223 99 96 72 63
-const whatsappNumber = "22399967263";
+// Numéro WhatsApp officiel de l'entreprise : +223 79 29 96 94
+const whatsappNumber = "22379299694";
 
 // Adresse email de contact officielle
 const contactEmail = "tmvsarl@gmail.com";
