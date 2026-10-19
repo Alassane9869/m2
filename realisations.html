@@ -92,15 +92,39 @@
 
     <section>
       <div class="container">
-        <!-- Filtres par catégorie -->
-        <div class="filters" role="group" aria-label="Filtrer les réalisations par catégorie">
-          <button class="filter-btn active" data-filter="all">Toutes les réalisations</button>
-          <button class="filter-btn" data-filter="portes">Portes &amp; Portails</button>
-          <button class="filter-btn" data-filter="baies-vitrees">Baies vitrées</button>
-          <button class="filter-btn" data-filter="escaliers">Escaliers</button>
-          <button class="filter-btn" data-filter="garde-corps">Garde-corps &amp; Rampes</button>
-          <button class="filter-btn" data-filter="vitrage">Vitrages &amp; Vitrines</button>
-          <button class="filter-btn" data-filter="metallerie">Structures &amp; Métallerie</button>
+        <!-- Filtres par catégorie compacts et responsive -->
+        <div class="filters-wrapper">
+          <div class="filters" role="group" aria-label="Filtrer les réalisations par catégorie">
+            <button class="filter-btn active" data-filter="all">
+              <i class="bi bi-grid-fill"></i>
+              <span>Tous</span>
+              <span class="filter-count">30</span>
+            </button>
+            <button class="filter-btn" data-filter="portes">
+              <span>Portes &amp; Portails</span>
+              <span class="filter-count">15</span>
+            </button>
+            <button class="filter-btn" data-filter="baies-vitrees">
+              <span>Baies vitrées</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="escaliers">
+              <span>Escaliers</span>
+              <span class="filter-count">3</span>
+            </button>
+            <button class="filter-btn" data-filter="garde-corps">
+              <span>Garde-corps</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="vitrage">
+              <span>Vitrages &amp; Vitrines</span>
+              <span class="filter-count">4</span>
+            </button>
+            <button class="filter-btn" data-filter="metallerie">
+              <span>Structures &amp; Métallerie</span>
+              <span class="filter-count">4</span>
+            </button>
+          </div>
         </div>
 
         <!-- Grille de réalisations -->

@@ -120,6 +120,16 @@ function initGalleryFilter() {
   const galleryItems = document.querySelectorAll(".gallery-item");
   if (!filterButtons.length || !galleryItems.length) return;
 
+  // Calcul dynamique des compteurs de chaque catégorie
+  filterButtons.forEach(function (btn) {
+    const cat = btn.getAttribute("data-filter");
+    const countEl = btn.querySelector(".filter-count");
+    if (countEl) {
+      const count = cat === "all" ? galleryItems.length : document.querySelectorAll('.gallery-item[data-category="' + cat + '"]').length;
+      countEl.textContent = count;
+    }
+  });
+
   filterButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       filterButtons.forEach(function (b) { b.classList.remove("active"); });
@@ -131,6 +141,11 @@ function initGalleryFilter() {
         const matches = category === "all" || item.getAttribute("data-category") === category;
         item.hidden = !matches;
       });
+
+      // Centrage fluide de la catégorie active sur mobile
+      if (window.innerWidth <= 768) {
+        btn.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
     });
   });
 }

@@ -1124,31 +1124,94 @@ section { padding-block: var(--space-7); position: relative; }
 /* -------------------------------------------------------------------------
    11. GALERIE & LIGHTBOX MODAL
    ------------------------------------------------------------------------- */
-.filters {
+.filters-wrapper {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-bottom: var(--space-5);
   justify-content: center;
+  margin-bottom: var(--space-4);
+  width: 100%;
 }
-.filter-btn {
-  padding: 0.5rem 1.15rem;
-  border-radius: var(--radius-full);
+
+.filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 6px;
+  background: var(--grey-100);
   border: 1px solid var(--grey-200);
-  background: var(--white);
+  border-radius: var(--radius-full);
+  box-shadow: 0 1px 3px rgba(10, 28, 46, 0.04);
+  max-width: 100%;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  background: transparent;
   color: var(--text-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  font-family: var(--font-head);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .filter-btn:hover {
-  border-color: var(--tmv-primary);
+  background: var(--white);
   color: var(--tmv-primary);
+  border-color: var(--grey-200);
+  box-shadow: 0 2px 6px rgba(14, 111, 166, 0.08);
 }
+
 .filter-btn.active {
-  background: var(--tmv-primary);
-  border-color: var(--tmv-primary);
+  background: linear-gradient(135deg, var(--tmv-primary) 0%, #073B61 100%);
   color: var(--white);
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(14, 111, 166, 0.32);
+}
+
+.filter-btn:active {
+  transform: scale(0.96);
+}
+
+.filter-btn i {
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--radius-full);
+  background: var(--grey-200);
+  color: var(--text-muted);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.22s ease;
+}
+
+.filter-btn.active .filter-count {
+  background: rgba(255, 255, 255, 0.24);
+  color: var(--white);
+}
+
+.filter-btn:hover:not(.active) .filter-count {
+  background: var(--grey-300);
+  color: var(--tmv-primary);
 }
 
 .gallery-grid {
@@ -1884,24 +1947,63 @@ section { padding-block: var(--space-7); position: relative; }
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-4); }
   .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
 
-  /* Filtres galerie en carrousel tactile horizontal sans barre de défilement */
+  /* Filtres galerie : navigation swipeable ultra-propre, compacte et responsive */
+  .filters-wrapper {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+    margin-bottom: var(--space-3);
+    position: relative;
+    overflow: hidden;
+  }
+  .filters-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.95));
+    pointer-events: none;
+    z-index: 2;
+  }
   .filters {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;
-    padding: 4px 6px 12px;
-    margin-bottom: var(--space-4);
-    gap: 8px;
+    padding: 3px 28px 7px 16px;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    scroll-snap-type: x proximity;
   }
-  .filters::-webkit-scrollbar { display: none; }
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
   .filter-btn {
-    white-space: nowrap;
     flex-shrink: 0;
-    padding: 0.45rem 1rem;
-    font-size: 0.8rem;
+    scroll-snap-align: start;
+    padding: 5px 11px;
+    font-size: 0.775rem;
+    gap: 5px;
+    background: var(--white);
+    border: 1px solid var(--grey-200);
+    box-shadow: 0 1px 2px rgba(10, 28, 46, 0.04);
+  }
+  .filter-btn.active {
+    border-color: transparent;
+    box-shadow: 0 2px 7px rgba(14, 111, 166, 0.3);
+  }
+  .filter-count {
+    min-width: 16px;
+    height: 16px;
+    font-size: 0.65rem;
+    padding: 0 4px;
   }
 
   /* Captions de galerie toujours lisibles sur écran tactile mobile */
