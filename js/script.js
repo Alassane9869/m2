@@ -1,4 +1,4 @@
-﻿/* =========================================================================
+/* =========================================================================
    TMV - SARL | script.js
    Fonctionnalités : menu mobile, header sticky, révélation au défilement,
    filtre galerie, modal images, validation formulaires, génération de
@@ -106,7 +106,7 @@ function initScrollReveal() {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.01, rootMargin: "60px 0px" }
   );
 
   items.forEach(function (el) { observer.observe(el); });
