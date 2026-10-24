@@ -371,6 +371,14 @@ section { padding-block: var(--space-7); position: relative; }
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.06));
   flex-shrink: 0;
 }
+.site-header .brand-logo {
+  height: 52px;
+  max-width: 56px;
+  transition: height 0.25s ease;
+}
+.site-header.is-scrolled .brand-logo {
+  height: 46px;
+}
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -1997,6 +2005,7 @@ section { padding-block: var(--space-7); position: relative; }
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
   .site-header { height: 68px; }
+  .site-header .brand-logo { height: 44px; max-width: 48px; }
   .brand-logo { height: 38px; }
   .brand-text strong { font-size: 0.90rem; }
   .brand-text span { font-size: 0.65rem; }
